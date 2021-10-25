@@ -1,0 +1,73 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  .header {
+    position: sticky;
+    top: 80px;
+    width: 100%;
+    min-height: 80px;
+    background-color: rgb(249, 249, 249);
+    border-radius: 3px;
+    .top {
+      margin: 8px;
+      display: flex;
+      justify-content: space-between;
+      .title {
+        font-size: 16px;
+        font-weight: 400;
+      }
+      .slider {
+        flex: 0 0 160px;
+        cursor: pointer;
+        margin: 8px;
+      }
+    }
+    .tags {
+      margin: 8px;
+      display: flex;
+      width: 100%;
+      overflow: hidden;
+      flex-wrap: wrap;
+      .tag {
+        margin-right: 4px;
+        margin-bottom: 4px;
+      }
+    }
+  }
+  .projects {
+    display: flex;
+    flex-direction: column;
+    .project {
+      margin-bottom: 32px;
+      .top {
+        display: flex;
+        border-bottom: 1px solid #ececec;
+        margin-bottom: 16px;
+        .name {
+          font-size: 32px;
+          flex: 1;
+        }
+        .period {
+          display: flex;
+          align-items: flex-end;
+          justify-self: flex-end;
+        }
+      }
+      .role,
+      .employer {
+        display: flex;
+        line-height: 1.5em;
+      }
+      .description {
+        margin-top: 16px;
+      }
+
+    }
+  }
+}
+.key {
+  font-weight: 600;
+  margin-right: 8px;
+}
