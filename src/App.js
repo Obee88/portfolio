@@ -7,7 +7,7 @@ import Info from './components/Info';
 import Education from './components/Education';
 import Work from './components/Work';
 
-const HEADER_HEIGHT = 70;
+const HEADER_HEIGHT = 80;
 const sections = [
   { label: 'Info', name: 'Info' },
   { label: 'Education', name: 'Education' },
@@ -29,7 +29,8 @@ const App = () => {
         const divider = dividers[i];
         const id = divider.id;
         const position = divider.offsetTop;
-        if (position <= scrollPosition) {
+        const ADJUSTMENT = 30;
+        if (position <= (scrollPosition + ADJUSTMENT)) {
           activeSection = id;
         } else { break }
       }
