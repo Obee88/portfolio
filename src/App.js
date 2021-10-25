@@ -6,6 +6,7 @@ import Navigation from './components/common/Navigation';
 import Info from './components/Info';
 import Education from './components/Education';
 import Work from './components/Work';
+import Projects from './components/Projects';
 
 const HEADER_HEIGHT = 80;
 const sections = [
@@ -72,104 +73,7 @@ const App = () => {
         <div className={styles.divider} id="Work"/>
         <Work className={styles.section} />
         <div className={styles.divider} id="Projects"/>
-        <p>
-          adasdashdaij djkajsdlakd jdasnaslkdaslkd daksjmlakdmalklsdma makdlsmaslkdamsdlka
-          adasdashdaij djkajsdlakd jdasnaslkdaslkd daksjmlakdmalklsdma makdlsmaslkdamsdlka
-          adasdashdaij djkajsdlakd jdasnaslkdaslkd daksjmlakdmalklsdma makdlsmaslkdamsdlka
-          adasdashdaij djkajsdlakd jdasnaslkdaslkd daksjmlakdmalklsdma makdlsmaslkdamsdlka
-          adasdashdaij djkajsdlakd jdasnaslkdaslkd daksjmlakdmalklsdma makdlsmaslkdamsdlka
-          adasdashdaij djkajsdlakd jdasnaslkdaslkd daksjmlakdmalklsdma makdlsmaslkdamsdlka
-          adasdashdaij djkajsdlakd jdasnaslkdaslkd daksjmlakdmalklsdma makdlsmaslkdamsdlka
-          adasdashdaij djkajsdlakd jdasnaslkdaslkd daksjmlakdmalklsdma makdlsmaslkdamsdlka
-          adasdashdaij djkajsdlakd jdasnaslkdaslkd daksjmlakdmalklsdma makdlsmaslkdamsdlka
-          adasdashdaij djkajsdlakd jdasnaslkdaslkd daksjmlakdmalklsdma makdlsmaslkdamsdlka
-          adasdashdaij djkajsdlakd jdasnaslkdaslkd daksjmlakdmalklsdma makdlsmaslkdamsdlka
-          adasdashdaij djkajsdlakd jdasnaslkdaslkd daksjmlakdmalklsdma makdlsmaslkdamsdlka
-          adasdashdaij djkajsdlakd jdasnaslkdaslkd daksjmlakdmalklsdma makdlsmaslkdamsdlka
-          adasdashdaij djkajsdlakd jdasnaslkdaslkd daksjmlakdmalklsdma makdlsmaslkdamsdlka
-          adasdashdaij djkajsdlakd jdasnaslkdaslkd daksjmlakdmalklsdma makdlsmaslkdamsdlka
-          adasdashdaij djkajsdlakd jdasnaslkdaslkd daksjmlakdmalklsdma makdlsmaslkdamsdlka
-          adasdashdaij djkajsdlakd jdasnaslkdaslkd daksjmlakdmalklsdma makdlsmaslkdamsdlka
-          adasdashdaij djkajsdlakd jdasnaslkdaslkd daksjmlakdmalklsdma makdlsmaslkdamsdlka
-          adasdashdaij djkajsdlakd jdasnaslkdaslkd daksjmlakdmalklsdma makdlsmaslkdamsdlka
-          adasdashdaij djkajsdlakd jdasnaslkdaslkd daksjmlakdmalklsdma makdlsmaslkdamsdlka
-          adasdashdaij djkajsdlakd jdasnaslkdaslkd daksjmlakdmalklsdma makdlsmaslkdamsdlka
-          adasdashdaij djkajsdlakd jdasnaslkdaslkd daksjmlakdmalklsdma makdlsmaslkdamsdlka
-          adasdashdaij djkajsdlakd jdasnaslkdaslkd daksjmlakdmalklsdma makdlsmaslkdamsdlka
-          adasdashdaij djkajsdlakd jdasnaslkdaslkd daksjmlakdmalklsdma makdlsmaslkdamsdlka
-          adasdashdaij djkajsdlakd jdasnaslkdaslkd daksjmlakdmalklsdma makdlsmaslkdamsdlka
-          adasdashdaij djkajsdlakd jdasnaslkdaslkd daksjmlakdmalklsdma makdlsmaslkdamsdlka
-          adasdashdaij djkajsdlakd jdasnaslkdaslkd daksjmlakdmalklsdma makdlsmaslkdamsdlka
-          adasdashdaij djkajsdlakd jdasnaslkdaslkd daksjmlakdmalklsdma makdlsmaslkdamsdlka
-          adasdashdaij djkajsdlakd jdasnaslkdaslkd daksjmlakdmalklsdma makdlsmaslkdamsdlka
-
-          adasdashdaij djkajsdlakd jdasnaslkdaslkd daksjmlakdmalklsdma makdlsmaslkdamsdlka
-          adasdashdaij djkajsdlakd jdasnaslkdaslkd daksjmlakdmalklsdma makdlsmaslkdamsdlka
-          adasdashdaij djkajsdlakd jdasnaslkdaslkd daksjmlakdmalklsdma makdlsmaslkdamsdlka
-          adasdashdaij djkajsdlakd jdasnaslkdaslkd daksjmlakdmalklsdma makdlsmaslkdamsdlka
-          adasdashdaij djkajsdlakd jdasnaslkdaslkd daksjmlakdmalklsdma makdlsmaslkdamsdlka
-          adasdashdaij djkajsdlakd jdasnaslkdaslkd daksjmlakdmalklsdma makdlsmaslkdamsdlka
-          adasdashdaij djkajsdlakd jdasnaslkdaslkd daksjmlakdmalklsdma makdlsmaslkdamsdlka
-          adasdashdaij djkajsdlakd jdasnaslkdaslkd daksjmlakdmalklsdma makdlsmaslkdamsdlka
-          adasdashdaij djkajsdlakd jdasnaslkdaslkd daksjmlakdmalklsdma makdlsmaslkdamsdlka
-          adasdashdaij djkajsdlakd jdasnaslkdaslkd daksjmlakdmalklsdma makdlsmaslkdamsdlka
-          adasdashdaij djkajsdlakd jdasnaslkdaslkd daksjmlakdmalklsdma makdlsmaslkdamsdlka
-          adasdashdaij djkajsdlakd jdasnaslkdaslkd daksjmlakdmalklsdma makdlsmaslkdamsdlka
-          adasdashdaij djkajsdlakd jdasnaslkdaslkd daksjmlakdmalklsdma makdlsmaslkdamsdlka
-          adasdashdaij djkajsdlakd jdasnaslkdaslkd daksjmlakdmalklsdma makdlsmaslkdamsdlka
-          adasdashdaij djkajsdlakd jdasnaslkdaslkd daksjmlakdmalklsdma makdlsmaslkdamsdlka
-          adasdashdaij djkajsdlakd jdasnaslkdaslkd daksjmlakdmalklsdma makdlsmaslkdamsdlka
-          adasdashdaij djkajsdlakd jdasnaslkdaslkd daksjmlakdmalklsdma makdlsmaslkdamsdlka
-          adasdashdaij djkajsdlakd jdasnaslkdaslkd daksjmlakdmalklsdma makdlsmaslkdamsdlka
-          adasdashdaij djkajsdlakd jdasnaslkdaslkd daksjmlakdmalklsdma makdlsmaslkdamsdlka
-          adasdashdaij djkajsdlakd jdasnaslkdaslkd daksjmlakdmalklsdma makdlsmaslkdamsdlka
-          adasdashdaij djkajsdlakd jdasnaslkdaslkd daksjmlakdmalklsdma makdlsmaslkdamsdlka
-
-          adasdashdaij djkajsdlakd jdasnaslkdaslkd daksjmlakdmalklsdma makdlsmaslkdamsdlka
-          adasdashdaij djkajsdlakd jdasnaslkdaslkd daksjmlakdmalklsdma makdlsmaslkdamsdlka
-          adasdashdaij djkajsdlakd jdasnaslkdaslkd daksjmlakdmalklsdma makdlsmaslkdamsdlka
-          adasdashdaij djkajsdlakd jdasnaslkdaslkd daksjmlakdmalklsdma makdlsmaslkdamsdlka
-          adasdashdaij djkajsdlakd jdasnaslkdaslkd daksjmlakdmalklsdma makdlsmaslkdamsdlka
-          adasdashdaij djkajsdlakd jdasnaslkdaslkd daksjmlakdmalklsdma makdlsmaslkdamsdlka
-          adasdashdaij djkajsdlakd jdasnaslkdaslkd daksjmlakdmalklsdma makdlsmaslkdamsdlka
-          adasdashdaij djkajsdlakd jdasnaslkdaslkd daksjmlakdmalklsdma makdlsmaslkdamsdlka
-          adasdashdaij djkajsdlakd jdasnaslkdaslkd daksjmlakdmalklsdma makdlsmaslkdamsdlka
-          adasdashdaij djkajsdlakd jdasnaslkdaslkd daksjmlakdmalklsdma makdlsmaslkdamsdlka
-          adasdashdaij djkajsdlakd jdasnaslkdaslkd daksjmlakdmalklsdma makdlsmaslkdamsdlka
-          adasdashdaij djkajsdlakd jdasnaslkdaslkd daksjmlakdmalklsdma makdlsmaslkdamsdlka
-          adasdashdaij djkajsdlakd jdasnaslkdaslkd daksjmlakdmalklsdma makdlsmaslkdamsdlka
-          adasdashdaij djkajsdlakd jdasnaslkdaslkd daksjmlakdmalklsdma makdlsmaslkdamsdlka
-          adasdashdaij djkajsdlakd jdasnaslkdaslkd daksjmlakdmalklsdma makdlsmaslkdamsdlka
-          adasdashdaij djkajsdlakd jdasnaslkdaslkd daksjmlakdmalklsdma makdlsmaslkdamsdlka
-          adasdashdaij djkajsdlakd jdasnaslkdaslkd daksjmlakdmalklsdma makdlsmaslkdamsdlka
-          adasdashdaij djkajsdlakd jdasnaslkdaslkd daksjmlakdmalklsdma makdlsmaslkdamsdlka
-          adasdashdaij djkajsdlakd jdasnaslkdaslkd daksjmlakdmalklsdma makdlsmaslkdamsdlka
-          adasdashdaij djkajsdlakd jdasnaslkdaslkd daksjmlakdmalklsdma makdlsmaslkdamsdlka
-          adasdashdaij djkajsdlakd jdasnaslkdaslkd daksjmlakdmalklsdma makdlsmaslkdamsdlka
-
-          adasdashdaij djkajsdlakd jdasnaslkdaslkd daksjmlakdmalklsdma makdlsmaslkdamsdlka
-          adasdashdaij djkajsdlakd jdasnaslkdaslkd daksjmlakdmalklsdma makdlsmaslkdamsdlka
-          adasdashdaij djkajsdlakd jdasnaslkdaslkd daksjmlakdmalklsdma makdlsmaslkdamsdlka
-          adasdashdaij djkajsdlakd jdasnaslkdaslkd daksjmlakdmalklsdma makdlsmaslkdamsdlka
-          adasdashdaij djkajsdlakd jdasnaslkdaslkd daksjmlakdmalklsdma makdlsmaslkdamsdlka
-          adasdashdaij djkajsdlakd jdasnaslkdaslkd daksjmlakdmalklsdma makdlsmaslkdamsdlka
-          adasdashdaij djkajsdlakd jdasnaslkdaslkd daksjmlakdmalklsdma makdlsmaslkdamsdlka
-          adasdashdaij djkajsdlakd jdasnaslkdaslkd daksjmlakdmalklsdma makdlsmaslkdamsdlka
-          adasdashdaij djkajsdlakd jdasnaslkdaslkd daksjmlakdmalklsdma makdlsmaslkdamsdlka
-          adasdashdaij djkajsdlakd jdasnaslkdaslkd daksjmlakdmalklsdma makdlsmaslkdamsdlka
-          adasdashdaij djkajsdlakd jdasnaslkdaslkd daksjmlakdmalklsdma makdlsmaslkdamsdlka
-          adasdashdaij djkajsdlakd jdasnaslkdaslkd daksjmlakdmalklsdma makdlsmaslkdamsdlka
-          adasdashdaij djkajsdlakd jdasnaslkdaslkd daksjmlakdmalklsdma makdlsmaslkdamsdlka
-          adasdashdaij djkajsdlakd jdasnaslkdaslkd daksjmlakdmalklsdma makdlsmaslkdamsdlka
-          adasdashdaij djkajsdlakd jdasnaslkdaslkd daksjmlakdmalklsdma makdlsmaslkdamsdlka
-          adasdashdaij djkajsdlakd jdasnaslkdaslkd daksjmlakdmalklsdma makdlsmaslkdamsdlka
-          adasdashdaij djkajsdlakd jdasnaslkdaslkd daksjmlakdmalklsdma makdlsmaslkdamsdlka
-          adasdashdaij djkajsdlakd jdasnaslkdaslkd daksjmlakdmalklsdma makdlsmaslkdamsdlka
-          adasdashdaij djkajsdlakd jdasnaslkdaslkd daksjmlakdmalklsdma makdlsmaslkdamsdlka
-          adasdashdaij djkajsdlakd jdasnaslkdaslkd daksjmlakdmalklsdma makdlsmaslkdamsdlka
-          adasdashdaij djkajsdlakd jdasnaslkdaslkd daksjmlakdmalklsdma makdlsmaslkdamsdlka
-          adasdashdaij djkajsdlakd jdasnaslkdaslkd daksjmlakdmalklsdma makdlsmaslkdamsdlka
-        </p>
+        <Projects className={styles.section} />
         <div className={styles.divider} id="AboutMe"/>
         <p>
           adasdashdaij djkajsdlakd jdasnaslkdaslkd daksjmlakdmalklsdma makdlsmaslkdamsdlka
