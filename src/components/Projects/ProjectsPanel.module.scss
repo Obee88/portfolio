@@ -55,10 +55,23 @@
           justify-self: flex-end;
         }
       }
-      .role,
-      .employer {
+      .mid {
         display: flex;
-        line-height: 1.5em;
+        .left {
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+          .role,
+          .employer {
+            display: flex;
+            line-height: 1.5em;
+          }
+        }
+        .right {
+          .preview {
+            display: flex;
+          }
+        }
       }
       .description {
         margin-top: 16px;

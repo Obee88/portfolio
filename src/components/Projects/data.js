@@ -214,6 +214,7 @@ export const privateProjects = [
     role: 'Frontend Developer',
     type: 'Private Project',
     repository: 'https://github.com/Obee88/minesweeper-react',
+    previewUrl: 'https://obee88.github.io/minesweeper-react',
     tags: [
       'React', 'JavaScript', 'Webpack',
     ],

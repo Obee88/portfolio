@@ -44,17 +44,29 @@ const ProjectsPanel = ({ items, className, title }) => {
         </div>
       </div>
       <div className={styles.projects}>
-        {filteredItems.map(({ name, employer, role, description, period }) => (
+        {filteredItems.map(({ name, employer, role, description, period, previewUrl }) => (
           <div className={styles.project} key={name}>
             <div className={styles.top}>
               <div className={styles.name}>{name}</div>
               <div className={styles.period}>{period}</div>
             </div>
-            <div className={styles.employer}>
-              <div className={styles.key}>Employer:</div>{employer}
-            </div>
-            <div className={styles.role}>
-              <div className={styles.key}>Role:</div>{role}
+            <div className={styles.mid}>
+              <div className={styles.left}>
+                <div className={styles.employer}>
+                  <div className={styles.key}>Employer:</div>{employer}
+                </div>
+                <div className={styles.role}>
+                  <div className={styles.key}>Role:</div>{role}
+                </div>
+              </div>
+              <div className={styles.right}>
+                <div className={styles.preview}>
+                  <iframe
+                    title={`${name}_preview`}
+                     src={preview}
+                  />
+                </div>
+              </div>
             </div>
             <div className={styles.description}>{description}</div>
           </div>
