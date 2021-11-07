@@ -3,6 +3,7 @@ import { flatMap, includes, uniq, some, isEmpty } from 'lodash';
 import React, { useMemo, useState } from 'react';
 import Badge from '../common/Badge';
 import DetailsSlider from '../common/DetailsSlider';
+import Preview from './Preview';
 import styles from './ProjectsPanel.module.scss';
 
 const ProjectsPanel = ({ items, className, title }) => {
@@ -44,7 +45,7 @@ const ProjectsPanel = ({ items, className, title }) => {
         </div>
       </div>
       <div className={styles.projects}>
-        {filteredItems.map(({ name, employer, role, description, period, previewUrl }) => (
+        {filteredItems.map(({ name, employer, role, description, period, preview = {} }) => (
           <div className={styles.project} key={name}>
             <div className={styles.top}>
               <div className={styles.name}>{name}</div>
@@ -60,12 +61,13 @@ const ProjectsPanel = ({ items, className, title }) => {
                 </div>
               </div>
               <div className={styles.right}>
-                <div className={styles.preview}>
-                  <iframe
+                {!isEmpty(preview) ? (
+                  <Preview
+                    className={styles.preview}
                     title={`${name}_preview`}
-                     src={preview}
+                    {...preview}
                   />
-                </div>
+                ) : null}
               </div>
             </div>
             <div className={styles.description}>{description}</div>

@@ -214,7 +214,11 @@ export const privateProjects = [
     role: 'Frontend Developer',
     type: 'Private Project',
     repository: 'https://github.com/Obee88/minesweeper-react',
-    previewUrl: 'https://obee88.github.io/minesweeper-react',
+    preview: {
+      url: 'https://obee88.github.io/minesweeper-react',
+      width: 540,
+      height: 400,
+    },
     tags: [
       'React', 'JavaScript', 'Webpack',
     ],
@@ -226,6 +230,11 @@ export const privateProjects = [
     name: 'World Stats',
     role: 'Frontend Developer',
     type: 'Private Project',
+    preview: {
+      url: 'https://obee88.github.io/world-stats/',
+      width: 540,
+      height: 400,
+    },
     repository: 'https://github.com/Obee88/world-stats',
     tags: [
       'React', 'Redux', 'D3', 'Webpack',
@@ -238,6 +247,11 @@ export const privateProjects = [
     name: 'Set',
     role: 'Frontend Developer',
     type: 'Private Project',
+    preview: {
+      url: ' https://obee88.github.io/set-react/',
+      width: 540,
+      height: 400,
+    },
     repository: 'https://github.com/Obee88/set-react',
     tags: [
       'React', 'Redux', 'Webpack',
