@@ -14,7 +14,7 @@ const ProjectsPanel = ({ items, className, title }) => {
       items.filter(item => some(activeFilters, af => includes(item.tags, af))),
     [items, activeFilters]
   );
-  const tags = useMemo(() => uniq(flatMap(items, 'tags')), [items]);
+  // const tags = useMemo(() => uniq(flatMap(items, 'tags')), [items]);
   return (
     <div className={classNames(styles.container, className)}>
       <div className={styles.header}>
@@ -45,7 +45,7 @@ const ProjectsPanel = ({ items, className, title }) => {
         </div>*/}
       </div>
       <div className={styles.projects}>
-        {filteredItems.map(({ name, employer, role, description, period, preview = {} }) => (
+        {filteredItems.map(({ tags, name, employer, role, description, period, preview = {} }) => (
           <div key={name} className={classNames(styles.project, 'highlight')} >
             <div className={styles.top}>
               <div className={styles.name}>{name}</div>
@@ -71,6 +71,22 @@ const ProjectsPanel = ({ items, className, title }) => {
               </div>
             </div>
             <div className={styles.description}>{description}</div>
+            <div className={styles.tags}>
+              {tags.map(tag => (
+                <Badge
+                  className={styles.tag}
+                  text={tag}
+                  active={includes(activeFilters, tag)}
+                  onClick={() => {
+                    const i = activeFilters.indexOf(tag);
+                    const nextActiveFilters = i < 0 ? 
+                      [...activeFilters, tag] :
+                      [...activeFilters.slice(0, i), ...activeFilters.slice(i + 1)]
+                    setActiveFilters(nextActiveFilters);
+                  }}
+                />
+              ))}
+            </div>
           </div>
         ))}
       </div>

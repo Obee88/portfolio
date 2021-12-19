@@ -22,7 +22,7 @@ export const workProjects = [
       <D lvl={1}>
       </D>
       <D lvl={3}>
-        It is a complex components based application. It is designed to be not just an app
+        It is a complex components based application. It is designed not to be just an app
         but also a tool. Everything is reusable and everything must be configurable by users. This
         means it gives users a lot of freedom in generating dashboards that perfectly fit their own
         needs.&nbsp;
@@ -38,18 +38,39 @@ export const workProjects = [
         are specially focused on optimising data traffic and reducing redundant backend calls.&nbsp;
       </D>
       <D lvl={2}>
-        Efficient code and high performances are equally important as nice design and great user experience.
-        As a member of a small frontend team my role is to design and implement new features
-        but also fix bugs and maintain existing code.&nbsp;
-      </D>
-      <D lvl={3}>I was mostly focused on designing and
-        implementing Infrastructure Overview Dashboards - a tool for monitoring your servers
-        hierarchy including monitoring their pods, containers, packages, and processes. On this
-        project I worked as an engineer.&nbsp;
+        Efficient code and high performances are equally important as nice design and great user experience.&nbsp;
       </D>
       <D lvl={2}>
-        My responsibilities are to create and implement solutions
-        and implement visual designs. Visual design is usually made by a third party.
+        Through different etapes of my employment I worked on several different subproducts. As
+        a member of 4 member team I was in charge of implementing Infrastructure Overview Dashboards&nbsp;
+      </D>
+      <D lvl={3}>
+        - a tool for monitoring your servers hierarchy including monitoring their pods, containers, packages,
+        and processes.&nbsp;
+      </D>
+      <D lvl={2}>
+        In next etape I was main frontend engineer for Discovery subproduct.&nbsp;
+      </D>
+      <D lvl={3}>
+        It offered user the overview of services and logs discovered on their machines.
+        Chalenge was to define a simple and user friendly UI flow that would allow user to discover
+        unmonitored services on their machines and to simply start monitoring them in just few simple clicks.&nbsp;
+      </D>
+      <D lvl={2}>
+        I closely cooperated with other engineers on defining the subproduct features. After features were defined
+        I would cooperate with designer on creating visual design for this subproduct and finally I was fully responsible
+        for implementing the frontend solution.&nbsp;
+      </D>
+      <D lvl={2}>
+        In next etape I became the owner of Fleet subproduct.&nbsp;
+      </D>
+      <D lvl={3}>
+        It offered user the overview and the controll over the fleet of their installed agents.&nbsp;
+      </D>
+      <D lvl={2}>
+        Again I worked together with other engineers on defining features. I covorked with designer on creation of
+        visual design and finally implemented frontend solution but this time I was also in charge of managing sprints
+        and creating tickets for other team members.
       </D>
     </>),
   },
