@@ -7,6 +7,7 @@ import Info from './components/Info';
 import Education from './components/Education';
 import Work from './components/Work';
 import Projects from './components/Projects';
+import Divider from './components/common/Divider';
 
 const HEADER_HEIGHT = 80;
 const sections = [
@@ -23,7 +24,7 @@ const App = () => {
   useEffect(() => {
     const handleScroll = (e) => {
       const container = e.srcElement;
-      const dividers = $(`.${styles.divider}`).toArray();
+      const dividers = $(`[data-type=divider]`).toArray();
       const scrollPosition = container.scrollTop + HEADER_HEIGHT;
       let activeSection = sections[0].name;
       for(let i = 0; i< dividers.length; ++i) {
@@ -68,13 +69,13 @@ const App = () => {
       </div>
       <div className={styles.content}>
         <Info className={styles.section} />
-        <div className={styles.divider} id="Education"/>
+        <Divider id="Education" />
         <Education className={styles.section} />
-        <div className={styles.divider} id="Work"/>
+        <Divider id="Work" />
         <Work className={styles.section} />
-        <div className={styles.divider} id="Projects"/>
+        <Divider id="Projects" />
         <Projects className={styles.section} />
-        <div className={styles.divider} id="AboutMe"/>
+        <Divider id="AboutMe" />
         <p>
           adasdashdaij djkajsdlakd jdasnaslkdaslkd daksjmlakdmalklsdma makdlsmaslkdamsdlka
           adasdashdaij djkajsdlakd jdasnaslkdaslkd daksjmlakdmalklsdma makdlsmaslkdamsdlka

@@ -29,9 +29,6 @@
       display: flex;
       flex-direction: column;
       border-radius: 1em;
-      &:hover {
-        box-shadow: 11px 11px 130px 70px rgba(206, 212, 224, 0.18);
-      }
       .head {
         display: flex;
         .left {

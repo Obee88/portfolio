@@ -13,7 +13,7 @@ const WorkEducationList = ({ Icon, items, className, title }) => (
     </div>
     <div className={styles.items}>
       {items.map(({ bullets = [], institution, role, period, keywords = [] }) => (
-        <div className={styles.item}>
+        <div className={classNames(styles.item, 'highlight')}>
           <div className={styles.head}>
             <div className={styles.left}>
               <div className={styles.logo}>

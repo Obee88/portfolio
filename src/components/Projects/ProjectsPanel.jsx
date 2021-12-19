@@ -27,7 +27,7 @@ const ProjectsPanel = ({ items, className, title }) => {
             <DetailsSlider />
           </div>
         </div>
-        <div className={styles.tags}>
+        {/*<div className={styles.tags}>
           {tags.map(tag => (
             <Badge
               className={styles.tag}
@@ -42,11 +42,11 @@ const ProjectsPanel = ({ items, className, title }) => {
               }}
             />
           ))}
-        </div>
+        </div>*/}
       </div>
       <div className={styles.projects}>
         {filteredItems.map(({ name, employer, role, description, period, preview = {} }) => (
-          <div className={styles.project} key={name}>
+          <div key={name} className={classNames(styles.project, 'highlight')} >
             <div className={styles.top}>
               <div className={styles.name}>{name}</div>
               <div className={styles.period}>{period}</div>

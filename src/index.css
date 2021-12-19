@@ -19,3 +19,7 @@ p {
   line-height: 30px;
   margin-bottom: 40px;
 }
+
+.highlight:hover {
+  box-shadow: 11px 11px 130px 70px rgb(206 212 224 / 18%);
+}

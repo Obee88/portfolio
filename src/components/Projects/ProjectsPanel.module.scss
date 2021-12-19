@@ -15,13 +15,15 @@
       display: flex;
       justify-content: space-between;
       .title {
-        font-size: 16px;
+        font-size: 32px;
         font-weight: 400;
       }
       .slider {
         flex: 0 0 160px;
         cursor: pointer;
         margin: 8px;
+        display: flex;
+        align-items: center;
       }
     }
     .tags {
@@ -38,15 +40,16 @@
   }
   .projects {
     display: flex;
+    padding: 0 8px;
     flex-direction: column;
     .project {
-      margin-bottom: 32px;
+      padding: 16px;
       .top {
         display: flex;
         border-bottom: 1px solid #ececec;
         margin-bottom: 16px;
         .name {
-          font-size: 32px;
+          font-size: 24px;
           flex: 1;
         }
         .period {

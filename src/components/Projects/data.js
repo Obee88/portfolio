@@ -216,7 +216,7 @@ export const privateProjects = [
     repository: 'https://github.com/Obee88/minesweeper-react',
     preview: {
       url: 'https://obee88.github.io/minesweeper-react',
-      width: 540,
+      width: 560,
       height: 400,
     },
     tags: [
@@ -232,7 +232,7 @@ export const privateProjects = [
     type: 'Private Project',
     preview: {
       url: 'https://obee88.github.io/world-stats/',
-      width: 540,
+      width: 560,
       height: 400,
     },
     repository: 'https://github.com/Obee88/world-stats',
@@ -248,8 +248,8 @@ export const privateProjects = [
     role: 'Frontend Developer',
     type: 'Private Project',
     preview: {
-      url: ' https://obee88.github.io/set-react/',
-      width: 540,
+      url: ' https://obee88.github.io/set-react?autoStart=true',
+      width: 560,
       height: 400,
     },
     repository: 'https://github.com/Obee88/set-react',

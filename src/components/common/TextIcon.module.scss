@@ -1,0 +1,14 @@
+$IconSize: 24px;
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: $IconSize;
+  height: $IconSize;
+  flex: 0 0 $IconSize;
+  font-size: 16px;
+  line-height: 20px;
+  border-radius: 50%;
+  background-color: gray;
+}
