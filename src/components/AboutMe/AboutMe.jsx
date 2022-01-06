@@ -16,12 +16,12 @@ const AboutMe = ({ className }) => {
         <p>
           I am 34 year old software engineer with 8 years of remote working experience.
           Ever since my early school days I was in love with algorithms. My passion is
-          not only to write code but also to write it efficiently and to optimize it in
+          not only to write code but also to write it efficiently and to optimise it in
           CPU and memory usage.
         </p>
         <p>
-          During my carrer I learned that beeing remote working engineer does not only mean
-          beeing a good programer. For past five years I worked closely with designers to
+          During my career I learned that being remote working engineer does not only mean
+          being a good programer. For past five years I worked closely with designers to
           design and develop a beautiful user experiences but also with product teams to
           create sustainable product roadmaps. Beside implementing new features and fixing bugs I
           also participated in code reviews with peers and managers to ensure that each increment
@@ -32,7 +32,7 @@ const AboutMe = ({ className }) => {
           less experienced team members.
         </p>
         <p>
-          When it comes to architectural, product, design or process decisions I colaborate with strong
+          When it comes to architectural, product, design or process decisions I collaborate with strong
           judgement and an attention to details. When discussing new capabilities, my first instinct is to
           think of the user story rather than the feature set. I think in terms of making the most common
           interactions effortless, rather than making anything possible.
