@@ -7,7 +7,9 @@ const Info = ({ className }) => (
     <div className={styles.info}>
       <h1>Hello, I'm Davor.{'\n'}</h1>
       <p>
-        I am a Full Stack Engineer but my passion is Frontend development.</p>
+        I am a Full Stack Engineer but my passion is Data Visualisation,<br />
+        Algorithms and Frontend development.
+      </p>
     </div>
     <div className={styles.picture}>
     </div>

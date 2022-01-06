@@ -43,16 +43,11 @@ const Work = ({ className }) => (
           Icon: ReactIcon,
           text: (
             <span>
-              Passion for <P>Frontend developent</P>
+              Passion for <P>Frontend developent</P> <br />and <P>Algorithms</P>
             </span>
           ),
           tooltip: 'React + Redux + Typescript',
         },
-        // {
-        //   Icon: () => <TextIcon text="8y"/>,
-        //   text: "8 years of experience in web development",
-        //   tooltip: 'React + Redux + Typescript',
-        // },
       ]}
     />
   </>

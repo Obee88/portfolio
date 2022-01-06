@@ -8,14 +8,15 @@ import Education from './components/Education';
 import Work from './components/Work';
 import Projects from './components/Projects';
 import Divider from './components/common/Divider';
+import AboutMe from './components/AboutMe';
 
 const HEADER_HEIGHT = 80;
 const sections = [
   { label: 'Info', name: 'Info' },
   { label: 'Education', name: 'Education' },
   { label: 'Work', name: 'Work' },
-  { label: 'Projects', name: 'Projects' },
   { label: 'About Me', name: 'AboutMe' },
+  { label: 'Projects', name: 'Projects' },
 ];
 
 const App = () => {
@@ -73,31 +74,10 @@ const App = () => {
         <Education className={styles.section} />
         <Divider id="Work" />
         <Work className={styles.section} />
+        <Divider id="AboutMe" />
+        <AboutMe className={styles.section}/>
         <Divider id="Projects" />
         <Projects className={styles.section} />
-        <Divider id="AboutMe" />
-        <p>
-          adasdashdaij djkajsdlakd jdasnaslkdaslkd daksjmlakdmalklsdma makdlsmaslkdamsdlka
-          adasdashdaij djkajsdlakd jdasnaslkdaslkd daksjmlakdmalklsdma makdlsmaslkdamsdlka
-          adasdashdaij djkajsdlakd jdasnaslkdaslkd daksjmlakdmalklsdma makdlsmaslkdamsdlka
-          adasdashdaij djkajsdlakd jdasnaslkdaslkd daksjmlakdmalklsdma makdlsmaslkdamsdlka
-          adasdashdaij djkajsdlakd jdasnaslkdaslkd daksjmlakdmalklsdma makdlsmaslkdamsdlka
-          adasdashdaij djkajsdlakd jdasnaslkdaslkd daksjmlakdmalklsdma makdlsmaslkdamsdlka
-          adasdashdaij djkajsdlakd jdasnaslkdaslkd daksjmlakdmalklsdma makdlsmaslkdamsdlka
-          adasdashdaij djkajsdlakd jdasnaslkdaslkd daksjmlakdmalklsdma makdlsmaslkdamsdlka
-          adasdashdaij djkajsdlakd jdasnaslkdaslkd daksjmlakdmalklsdma makdlsmaslkdamsdlka
-          adasdashdaij djkajsdlakd jdasnaslkdaslkd daksjmlakdmalklsdma makdlsmaslkdamsdlka
-          adasdashdaij djkajsdlakd jdasnaslkdaslkd daksjmlakdmalklsdma makdlsmaslkdamsdlka
-          adasdashdaij djkajsdlakd jdasnaslkdaslkd daksjmlakdmalklsdma makdlsmaslkdamsdlka
-          adasdashdaij djkajsdlakd jdasnaslkdaslkd daksjmlakdmalklsdma makdlsmaslkdamsdlka
-          adasdashdaij djkajsdlakd jdasnaslkdaslkd daksjmlakdmalklsdma makdlsmaslkdamsdlka
-          adasdashdaij djkajsdlakd jdasnaslkdaslkd daksjmlakdmalklsdma makdlsmaslkdamsdlka
-          adasdashdaij djkajsdlakd jdasnaslkdaslkd daksjmlakdmalklsdma makdlsmaslkdamsdlka
-          adasdashdaij djkajsdlakd jdasnaslkdaslkd daksjmlakdmalklsdma makdlsmaslkdamsdlka
-          adasdashdaij djkajsdlakd jdasnaslkdaslkd daksjmlakdmalklsdma makdlsmaslkdamsdlka
-          adasdashdaij djkajsdlakd jdasnaslkdaslkd daksjmlakdmalklsdma makdlsmaslkdamsdlka
-          adasdashdaij djkajsdlakd jdasnaslkdaslkd daksjmlakdmalklsdma makdlsmaslkdamsdlka
-        </p>
       </div>
       <div className={styles.footer} />
     </div>
