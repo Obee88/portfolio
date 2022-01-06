@@ -4,6 +4,7 @@ export const workProjects = [
   {
     name: 'Sematext Cloud',
     employer: 'Sematext',
+    type: 'Professional assignment',
     role: 'Frontend Engineer',
     period: 'Jan 2018 - present',
     tags: [
@@ -77,6 +78,7 @@ export const workProjects = [
   {
     name: 'BMW Sensor Analytics Framework',
     employer: 'ComSysto',
+    type: 'Professional assignment',
     role: 'Full Stack Engineer, AWS architect',
     period: 'July 2016 - Jan 2018',
     tags: [
@@ -129,6 +131,7 @@ export const workProjects = [
   {
     name: 'SeeVee',
     employer: 'ComSysto',
+    type: 'Professional assignment',
     role: 'Frontend Developer',
     period: 'Aug 2015 - July 2016',
     tags: [
@@ -177,6 +180,7 @@ export const workProjects = [
   {
     name: 'MongoSoup',
     employer: 'ComSysto',
+    type: 'Professional assignment',
     role: 'Full Stack Developer',
     tags: [
       'AWS', 'Docker', 'Nginx', 'Python', 'Flask', 'jQuery', 'MongoDB'
@@ -237,32 +241,27 @@ export const privateProjects = [
     repository: 'https://github.com/Obee88/minesweeper-react',
     preview: {
       url: 'https://obee88.github.io/minesweeper-react',
-      width: 560,
+      width: 660,
       height: 400,
     },
     tags: [
-      'React', 'JavaScript', 'Webpack',
+      'React', 'TypeScript', 'Webpack',
     ],
-    description: `
-      Lorem Ipsum
-    `,
-  },
-  {
-    name: 'World Stats',
-    role: 'Frontend Developer',
-    type: 'Private Project',
-    preview: {
-      url: 'https://obee88.github.io/world-stats/',
-      width: 560,
-      height: 400,
-    },
-    repository: 'https://github.com/Obee88/world-stats',
-    tags: [
-      'React', 'Redux', 'D3', 'Webpack',
-    ],
-    description: `
-      Lorem Ipsum
-    `,
+    description: (showPreview) => (
+      <>
+        <D lvl={1}>Famous old game this time developed in web technologies</D>
+        <D lvl={2}>&nbsp;and available for playing in browser</D>
+        <D lvl={1}>.&nbsp;</D>
+        <D lvl={3}>It was developed using React.js strongly typed with TypeScript.&nbsp;</D>
+        <D lvl={2}>
+          Goal was to bring full experience of playing this beloved old game in browser. Therefore original
+          design was used and all functionalities were implemented exactly as I remember it from
+          Win 3.1.&nbsp;
+        </D>
+        <D lvl={3}>It was a one man project and everything was implemented by myself.&nbsp;</D>
+        <D lvl={3}>Click <button className="link" onClick={() => showPreview()}>here</button> to try it.</D>
+      </>
+    ),
   },
   {
     name: 'Set',
@@ -270,16 +269,28 @@ export const privateProjects = [
     type: 'Private Project',
     preview: {
       url: ' https://obee88.github.io/set-react?autoStart=true',
-      width: 560,
+      width: 660,
       height: 400,
     },
     repository: 'https://github.com/Obee88/set-react',
     tags: [
-      'React', 'Redux', 'Webpack',
+      'React', 'TypeScript', 'Redux', 'Webpack',
     ],
-    description: `
-      Lorem Ipsum
-    `,
+    description: (showPreview) => (
+      <>
+        <D lvl={1}>Another famous board game implemented for playing in browser.&nbsp;</D>
+        <D lvl={2}>
+          Only available for playing in single player this game is great for mental training.&nbsp;
+        </D>
+        <D lvl={3}>It was developed using React strongly typed with TypeScript.&nbsp;</D>
+        <D lvl={2}>
+          For those unfamiliar with rules there is a hint button availale. It displays
+          the correct answer and explains what exactly you should be looking for. &nbsp;
+        </D>
+        <D lvl={3}>Try it. It was a one man project and everything was implemented by myself.&nbsp;</D>
+        <D lvl={3}>Click <button className="link" onClick={() => showPreview()}>here</button> to try it.</D>
+      </>
+    ),
   },
   {
     name: 'DeckBuilder',
@@ -289,26 +300,59 @@ export const privateProjects = [
     tags: [
       'Java', 'Wicket', 'JavaScript', 'MongoDB',
     ],
-    description: (<>
-      <D lvl={1}>
-        DeckBuilder is a web application for virtual cards gathering based on “Magic The
-        Gathering” trading card game.&nbsp;
-      </D>
-      <D lvl={3}>
-        This project has been continuously growing and developing
-        during the period of three years. Part by part it growth to a cool web application with a lot
-        of interesting functionalities containing thousands lines of Java code.&nbsp;
-      </D>
-      <D lvl={2}>Since the whole web
-        development, deployment, user management and support was made by myself, it gave me
-        a great experience in object oriented modeling, building a project architecture, refactoring,
-        parsing HTML, crawling the internet for data, development of reusable wicket components.&nbsp;
-      </D>
-      <D lvl={3}>
-        Application is used by internal group of 15 active users who use it frequently on a daily
-        basis.
-      </D>
-    </>),
+    description: () => (
+      <>
+        <D lvl={1}>
+          DeckBuilder is a web application for virtual cards gathering based on “Magic The
+          Gathering” trading card game.&nbsp;
+        </D>
+        <D lvl={3}>
+          This project has been continuously growing and developing
+          during the period of three years. Part by part it growth to a cool web application with a lot
+          of interesting functionalities containing thousands lines of Java code.&nbsp;
+        </D>
+        <D lvl={2}>Since the whole web
+          development, deployment, user management and support was made by myself, it gave me
+          a great experience in object oriented modeling, building a project architecture, refactoring,
+          parsing HTML, crawling the internet for data, development of reusable wicket components.&nbsp;
+        </D>
+        <D lvl={3}>
+          Application is used by internal group of 15 active users who use it frequently on a daily
+          basis.
+        </D>
+      </>
+    ),
+  },
+  {
+    name: 'World Stats',
+    role: 'Frontend Developer',
+    type: 'Private Project',
+    preview: {
+      url: 'https://obee88.github.io/world-stats/',
+      width: 660,
+      height: 400,
+    },
+    repository: 'https://github.com/Obee88/world-stats',
+    tags: [
+      'React', 'Redux', 'D3', 'Webpack',
+    ],
+    description: (showPreview) => (
+      <>
+        <D lvl={1}>
+          This simple virtualisation of world map offers a fun way to learn geography.&nbsp;
+        </D>
+        <D lvl={2}>
+          I created it to learn new technologies combining D3.js with geoJson techonogies&nbsp;
+        </D>
+        <D lvl={3}>
+          but also to bring some joy to the youngest ones in my family
+        </D>
+        <D lvl={2}>
+          .&nbsp;
+        </D>
+        <D lvl={3}>Click <button className="link" onClick={() => showPreview()}>here</button> to try it.</D>
+      </>
+    ),
   },
 ];
 

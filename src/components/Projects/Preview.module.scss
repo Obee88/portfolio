@@ -10,18 +10,14 @@
     justify-content: flex-end;
     height: 24px;
     margin-bottom: 4px;
-    a.ext {
-      max-height: 24px;
-      margin: 0px 4px;
-      &:hover > svg > path {
-        fill: $main-color;
-      }
-    }
     button {
       cursor: pointer;
     }
   }
   .frame {
     flex: 1;
+    iframe {
+      border: 1px solid $main-color;
+    }
   }
 }

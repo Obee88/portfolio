@@ -1,6 +1,5 @@
-import React, { useState } from 'react';
+import React from 'react';
 import classNames from 'classnames';
-import {ReactComponent as ExternalLinkIcon} from './external-link.svg';
 import * as styles from './Preview.module.scss';
 
 const Preview = ({
@@ -9,27 +8,11 @@ const Preview = ({
   height,
   title,
   className,
+  visible = true,
 }) => {
-  const [open, setOpen] = useState(true);
   return (
     <div className={classNames(styles.container, className)}>
-      <div className={styles.row}>
-        <button
-          onClick={() => setOpen(o => !o)}
-        >
-          {`${open ? 'hide' : 'show'} preview`}
-        </button>
-        <a
-          rel="noreferrer"
-          href={url}
-          target="_blank"
-          title="open demo page"
-          className={styles.ext}
-        >
-          <ExternalLinkIcon />
-        </a>
-      </div>
-      {open && (
+      {visible && (
         <div className={styles.frame}>
           <iframe
             className={className}
