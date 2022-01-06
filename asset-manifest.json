@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.eebdc0f6.chunk.css",
+    "main.js": "/portfolio/static/js/main.9b569a1f.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.9b569a1f.chunk.js.map",
+    "runtime-main.js": "/portfolio/static/js/runtime-main.a9f76519.js",
+    "runtime-main.js.map": "/portfolio/static/js/runtime-main.a9f76519.js.map",
+    "static/js/2.de16857d.chunk.js": "/portfolio/static/js/2.de16857d.chunk.js",
+    "static/js/2.de16857d.chunk.js.map": "/portfolio/static/js/2.de16857d.chunk.js.map",
+    "index.html": "/portfolio/index.html",
+    "static/css/main.eebdc0f6.chunk.css.map": "/portfolio/static/css/main.eebdc0f6.chunk.css.map",
+    "static/js/2.de16857d.chunk.js.LICENSE.txt": "/portfolio/static/js/2.de16857d.chunk.js.LICENSE.txt",
+    "static/media/Briefcase.34fee10c.svg": "/portfolio/static/media/Briefcase.34fee10c.svg",
+    "static/media/University_logo.f5fb77ce.png": "/portfolio/static/media/University_logo.f5fb77ce.png",
+    "static/media/education.53c0550e.svg": "/portfolio/static/media/education.53c0550e.svg",
+    "static/media/efficient.98e17851.png": "/portfolio/static/media/efficient.98e17851.png",
+    "static/media/external-link.5d271cf1.svg": "/portfolio/static/media/external-link.5d271cf1.svg",
+    "static/media/eye-details.445e8a13.svg": "/portfolio/static/media/eye-details.445e8a13.svg",
+    "static/media/github.255db585.svg": "/portfolio/static/media/github.255db585.svg",
+    "static/media/Info.module.scss": "/portfolio/static/media/image.95066edd.jpeg",
+    "static/media/independent.b559e397.svg": "/portfolio/static/media/independent.b559e397.svg",
+    "static/media/laptop.f8603b09.svg": "/portfolio/static/media/laptop.f8603b09.svg",
+    "static/media/logo.6ce24c58.svg": "/portfolio/static/media/logo.6ce24c58.svg",
+    "static/media/sematext-icon.dc23edf0.svg": "/portfolio/static/media/sematext-icon.dc23edf0.svg",
+    "static/media/working-from-home.2791e02d.svg": "/portfolio/static/media/working-from-home.2791e02d.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a9f76519.js",
+    "static/js/2.de16857d.chunk.js",
+    "static/css/main.eebdc0f6.chunk.css",
+    "static/js/main.9b569a1f.chunk.js"
+  ]
+}
