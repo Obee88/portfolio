@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.eebdc0f6.chunk.css",
-    "main.js": "/portfolio/static/js/main.1cd7b6d4.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.1cd7b6d4.chunk.js.map",
+    "main.css": "/portfolio/static/css/main.f0e13534.chunk.css",
+    "main.js": "/portfolio/static/js/main.3f80dce7.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.3f80dce7.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.a9f76519.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.a9f76519.js.map",
-    "static/js/2.de16857d.chunk.js": "/portfolio/static/js/2.de16857d.chunk.js",
-    "static/js/2.de16857d.chunk.js.map": "/portfolio/static/js/2.de16857d.chunk.js.map",
+    "static/js/2.dbc4bd72.chunk.js": "/portfolio/static/js/2.dbc4bd72.chunk.js",
+    "static/js/2.dbc4bd72.chunk.js.map": "/portfolio/static/js/2.dbc4bd72.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "static/css/main.eebdc0f6.chunk.css.map": "/portfolio/static/css/main.eebdc0f6.chunk.css.map",
-    "static/js/2.de16857d.chunk.js.LICENSE.txt": "/portfolio/static/js/2.de16857d.chunk.js.LICENSE.txt",
+    "static/css/main.f0e13534.chunk.css.map": "/portfolio/static/css/main.f0e13534.chunk.css.map",
+    "static/js/2.dbc4bd72.chunk.js.LICENSE.txt": "/portfolio/static/js/2.dbc4bd72.chunk.js.LICENSE.txt",
     "static/media/Briefcase.34fee10c.svg": "/portfolio/static/media/Briefcase.34fee10c.svg",
     "static/media/University_logo.f5fb77ce.png": "/portfolio/static/media/University_logo.f5fb77ce.png",
     "static/media/education.53c0550e.svg": "/portfolio/static/media/education.53c0550e.svg",
@@ -26,8 +26,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.a9f76519.js",
-    "static/js/2.de16857d.chunk.js",
-    "static/css/main.eebdc0f6.chunk.css",
-    "static/js/main.1cd7b6d4.chunk.js"
+    "static/js/2.dbc4bd72.chunk.js",
+    "static/css/main.f0e13534.chunk.css",
+    "static/js/main.3f80dce7.chunk.js"
   ]
 }
