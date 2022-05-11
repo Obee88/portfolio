@@ -7,8 +7,8 @@ import {ReactComponent as FullStackIcon} from './laptop.svg';
 import {ReactComponent as ReactIcon} from './logo.svg';
 import {ReactComponent as HomeOfficeIcon} from './working-from-home.svg';
 import workItems from './data';
-import TextIcon from '../common/TextIcon';
 import P from '../common/P';
+import moment from 'moment';
 
 const Work = ({ className }) => (
   <>
@@ -25,7 +25,7 @@ const Work = ({ className }) => (
           Icon: HomeOfficeIcon,
           text: (
             <span>
-              <P>8 years</P> of remote working experience
+              <P>{moment().diff('2013-01-01', 'years', false)} years</P> of remote working experience
             </span>
           ),
           tooltip: 'Remote working engineer',
