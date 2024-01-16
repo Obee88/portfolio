@@ -235,6 +235,26 @@ export const workProjects = [
 
 export const privateProjects = [
   {
+    name: 'Lancer-Mobile',
+    role: 'Full-Stack Developer',
+    type: 'Private Project',
+    tags: [
+      'React-Native', 'Expo', 'Python', 'Flask', 'TypeScript', 'Docker',
+    ],
+    description: () => (
+      <>
+        <D lvl={1}>Platform for connecting Freelancers in the Production Industry with their potential employers.&nbsp;</D>
+        <D lvl={2}>Freelancer registers with information about their skills and keeps their calendar up to date. Based on this information, employers can use our search engine to find Freelancers who meet their skills criteria and are available on selected dates.&nbsp;</D>
+        <D lvl={3}>Employers can make queries based on Freelancer sector, profession, skills, location and/or availability.&nbsp;</D>
+        <D lvl={3}>Mobile App was developed using React-Native strongly typed with TypeScript.&nbsp; </D>
+        <D lvl={2}>Users can use mobile App in two different languages. Currently, English and Croatian languages are supported.  This project resulted in iOS and Android apps that are available for download on the AppStore and GooglePlay platforms in Croatian, Slovenian, Bosnian and Serbian markets.&nbsp;</D>
+        <D lvl={3}>It was a one-man project and everything was implemented by me. In order to learn more about React Native, I myself implemented both iOS and Android mobile apps. I also learned how to manage these apps and do periodical updates through App Store Connect and Google Play Console.&nbsp;</D>
+        <D lvl={3}>Backend API was implemented using Python Flask and data is persisted in MongoDB. Backend App and database are containerized with Docker, which makes deployment of new versions extremely quick and easy.&nbsp;</D>
+        <D lvl={3}>The whole infrastructure is hosted in Linux server and is being monitored with SematextCloud metrics and logs monitoring.&nbsp;</D>
+      </>
+    ),
+  },
+  {
     name: 'Minesweeper',
     role: 'Frontend Developer',
     type: 'Private Project',
@@ -323,37 +343,37 @@ export const privateProjects = [
       </>
     ),
   },
-  {
-    name: 'World Stats',
-    role: 'Frontend Developer',
-    type: 'Private Project',
-    preview: {
-      url: 'https://obee88.github.io/world-stats/',
-      width: 660,
-      height: 400,
-    },
-    repository: 'https://github.com/Obee88/world-stats',
-    tags: [
-      'React', 'Redux', 'D3', 'Webpack',
-    ],
-    description: (showPreview) => (
-      <>
-        <D lvl={1}>
-          This simple virtualisation of world map offers a fun way to learn geography.&nbsp;
-        </D>
-        <D lvl={2}>
-          I created it to learn new technologies combining D3.js with geoJson techonogies&nbsp;
-        </D>
-        <D lvl={3}>
-          but also to bring some joy to the youngest ones in my family
-        </D>
-        <D lvl={2}>
-          .&nbsp;
-        </D>
-        <D lvl={3}>Click <button className="link" onClick={() => showPreview()}>here</button> to try it.</D>
-      </>
-    ),
-  },
+  // {
+  //   name: 'World Stats',
+  //   role: 'Frontend Developer',
+  //   type: 'Private Project',
+  //   preview: {
+  //     url: 'https://obee88.github.io/world-stats/',
+  //     width: 660,
+  //     height: 400,
+  //   },
+  //   repository: 'https://github.com/Obee88/world-stats',
+  //   tags: [
+  //     'React', 'Redux', 'D3', 'Webpack',
+  //   ],
+  //   description: (showPreview) => (
+  //     <>
+  //       <D lvl={1}>
+  //         This simple virtualisation of world map offers a fun way to learn geography.&nbsp;
+  //       </D>
+  //       <D lvl={2}>
+  //         I created it to learn new technologies combining D3.js with geoJson techonogies&nbsp;
+  //       </D>
+  //       <D lvl={3}>
+  //         but also to bring some joy to the youngest ones in my family
+  //       </D>
+  //       <D lvl={2}>
+  //         .&nbsp;
+  //       </D>
+  //       <D lvl={3}>Click <button className="link" onClick={() => showPreview()}>here</button> to try it.</D>
+  //     </>
+  //   ),
+  // },
 ];
 
 const allProjects = [...workProjects, ...privateProjects];
