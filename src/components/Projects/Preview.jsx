@@ -1,6 +1,6 @@
 import React from 'react';
 import classNames from 'classnames';
-import * as styles from './Preview.module.scss';
+import styles from './Preview.module.scss';
 
 const Preview = ({
   url,
