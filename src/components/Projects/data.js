@@ -78,7 +78,7 @@ export const workProjects = [
   {
     name: 'BMW Sensor Analytics Framework',
     employer: 'ComSysto',
-    type: 'Professional assignment',
+    type: 'Professional Assignment',
     role: 'Full Stack Engineer, AWS architect',
     period: 'July 2016 - Jan 2018',
     tags: [
@@ -131,7 +131,7 @@ export const workProjects = [
   {
     name: 'SeeVee',
     employer: 'ComSysto',
-    type: 'Professional assignment',
+    type: 'Professional Assignment',
     role: 'Frontend Developer',
     period: 'Aug 2015 - July 2016',
     tags: [
@@ -180,7 +180,7 @@ export const workProjects = [
   {
     name: 'MongoSoup',
     employer: 'ComSysto',
-    type: 'Professional assignment',
+    type: 'Professional Assignment',
     role: 'Full Stack Developer',
     tags: [
       'AWS', 'Docker', 'Nginx', 'Python', 'Flask', 'jQuery', 'MongoDB'
@@ -255,64 +255,6 @@ export const privateProjects = [
     ),
   },
   {
-    name: 'Minesweeper',
-    role: 'Frontend Developer',
-    type: 'Private Project',
-    repository: 'https://github.com/Obee88/minesweeper-react',
-    preview: {
-      url: 'https://obee88.github.io/minesweeper-react',
-      width: 660,
-      height: 400,
-    },
-    tags: [
-      'React', 'TypeScript', 'Webpack',
-    ],
-    description: (showPreview) => (
-      <>
-        <D lvl={1}>Famous old game this time developed in web technologies</D>
-        <D lvl={2}>&nbsp;and available for playing in browser</D>
-        <D lvl={1}>.&nbsp;</D>
-        <D lvl={3}>It was developed using React.js strongly typed with TypeScript.&nbsp;</D>
-        <D lvl={2}>
-          Goal was to bring full experience of playing this beloved old game in browser. Therefore original
-          design was used and all functionalities were implemented exactly as I remember it from
-          Win 3.1.&nbsp;
-        </D>
-        <D lvl={3}>It was a one man project and everything was implemented by myself.&nbsp;</D>
-        <D lvl={3}>Click <button className="link" onClick={() => showPreview()}>here</button> to try it.</D>
-      </>
-    ),
-  },
-  {
-    name: 'Set',
-    role: 'Frontend Developer',
-    type: 'Private Project',
-    preview: {
-      url: ' https://obee88.github.io/set-react?autoStart=true',
-      width: 660,
-      height: 400,
-    },
-    repository: 'https://github.com/Obee88/set-react',
-    tags: [
-      'React', 'TypeScript', 'Redux', 'Webpack',
-    ],
-    description: (showPreview) => (
-      <>
-        <D lvl={1}>Another famous board game implemented for playing in browser.&nbsp;</D>
-        <D lvl={2}>
-          Only available for playing in single player this game is great for mental training.&nbsp;
-        </D>
-        <D lvl={3}>It was developed using React strongly typed with TypeScript.&nbsp;</D>
-        <D lvl={2}>
-          For those unfamiliar with rules there is a hint button availale. It displays
-          the correct answer and explains what exactly you should be looking for. &nbsp;
-        </D>
-        <D lvl={3}>Try it. It was a one man project and everything was implemented by myself.&nbsp;</D>
-        <D lvl={3}>Click <button className="link" onClick={() => showPreview()}>here</button> to try it.</D>
-      </>
-    ),
-  },
-  {
     name: 'DeckBuilder',
     role: 'Full Stack (one man project)',
     repository: 'https://github.com/Obee88/DeckBuilder',
@@ -343,37 +285,64 @@ export const privateProjects = [
       </>
     ),
   },
-  // {
-  //   name: 'World Stats',
-  //   role: 'Frontend Developer',
-  //   type: 'Private Project',
-  //   preview: {
-  //     url: 'https://obee88.github.io/world-stats/',
-  //     width: 660,
-  //     height: 400,
-  //   },
-  //   repository: 'https://github.com/Obee88/world-stats',
-  //   tags: [
-  //     'React', 'Redux', 'D3', 'Webpack',
-  //   ],
-  //   description: (showPreview) => (
-  //     <>
-  //       <D lvl={1}>
-  //         This simple virtualisation of world map offers a fun way to learn geography.&nbsp;
-  //       </D>
-  //       <D lvl={2}>
-  //         I created it to learn new technologies combining D3.js with geoJson techonogies&nbsp;
-  //       </D>
-  //       <D lvl={3}>
-  //         but also to bring some joy to the youngest ones in my family
-  //       </D>
-  //       <D lvl={2}>
-  //         .&nbsp;
-  //       </D>
-  //       <D lvl={3}>Click <button className="link" onClick={() => showPreview()}>here</button> to try it.</D>
-  //     </>
-  //   ),
-  // },
+  {
+    name: 'Minesweeper',
+    role: 'Frontend Developer',
+    type: 'Learning Technologies',
+    repository: 'https://github.com/Obee88/minesweeper-react',
+    preview: {
+      url: 'https://obee88.github.io/minesweeper-react',
+      width: 660,
+      height: 400,
+    },
+    tags: [
+      'React', 'TypeScript', 'Webpack',
+    ],
+    description: (showPreview) => (
+      <>
+        <D lvl={1}>Famous old game this time developed in web technologies</D>
+        <D lvl={2}>&nbsp;and available for playing in browser</D>
+        <D lvl={1}>.&nbsp;</D>
+        <D lvl={3}>It was developed using React.js strongly typed with TypeScript.&nbsp;</D>
+        <D lvl={2}>
+          Goal was to bring full experience of playing this beloved old game in browser. Therefore original
+          design was used and all functionalities were implemented exactly as I remember it from
+          Win 3.1.&nbsp;
+        </D>
+        <D lvl={3}>It was a one man project and everything was implemented by myself.&nbsp;</D>
+        <D lvl={3}>Click <button className="link" onClick={() => showPreview()}>here</button> to try it.</D>
+      </>
+    ),
+  },
+  {
+    name: 'Set',
+    role: 'Frontend Developer',
+    type: 'Learning Technologies',
+    preview: {
+      url: ' https://obee88.github.io/set-react?autoStart=true',
+      width: 660,
+      height: 400,
+    },
+    repository: 'https://github.com/Obee88/set-react',
+    tags: [
+      'React', 'TypeScript', 'Redux', 'Webpack',
+    ],
+    description: (showPreview) => (
+      <>
+        <D lvl={1}>Another famous board game implemented for playing in browser.&nbsp;</D>
+        <D lvl={2}>
+          Only available for playing in single player this game is great for mental training.&nbsp;
+        </D>
+        <D lvl={3}>It was developed using React strongly typed with TypeScript.&nbsp;</D>
+        <D lvl={2}>
+          For those unfamiliar with rules there is a hint button availale. It displays
+          the correct answer and explains what exactly you should be looking for. &nbsp;
+        </D>
+        <D lvl={3}>Try it. It was a one man project and everything was implemented by myself.&nbsp;</D>
+        <D lvl={3}>Click <button className="link" onClick={() => showPreview()}>here</button> to try it.</D>
+      </>
+    ),
+  },
 ];
 
 const allProjects = [...workProjects, ...privateProjects];
