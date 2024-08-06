@@ -39,10 +39,10 @@ const data = [
       url: 'https://sematext.com/',
       Logo: SematextIcon,
     },
-    role: 'Remote Frontend Engineer',
+    role: 'Remote Full Stack Engineer',
     bullets: [
       'Working remotely from Zagreb in Worldwide-distributed team',
-      'Frontend role',
+      'Full Stack role',
     ],
     keywords: ['JavaScript', 'React', 'Redux', 'ES6', 'SCSS'],
   },
