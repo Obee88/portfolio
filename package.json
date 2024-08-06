@@ -2,7 +2,7 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": false,
-  "homepage": "davor.obilinovic.codes.hr",
+  "homepage": "https://davor.obilinovic.codes.hr",
   "dependencies": {
     "@material-ui/core": "^4.12.4",
     "classnames": "^2.5.1",
