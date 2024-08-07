@@ -4,7 +4,7 @@ export const workProjects = [
   {
     name: 'Sematext Cloud',
     employer: 'Sematext',
-    type: 'Professional assignment',
+    type: 'Professional Assignment',
     role: 'Full Stack Engineer',
     period: 'Jan 2018 - present',
     tags: [
