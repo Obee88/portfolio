@@ -7,14 +7,19 @@ import efficient from './efficient.png';
 import P from '../common/P';
 import styles from './AboutMe.module.scss'
 import Divider from '../common/Divider';
+import moment from 'moment';
 
 const AboutMe = ({ className }) => {
+  const myBirthYear = 1987;
+  const myCareerStartYear = 2013;
+  const myAge = moment().year() - myBirthYear;
+  const myCareerYears = moment().year() - myCareerStartYear;
   return (
     <div className={classNames(className, styles.container)}>
       <h1>About Me</h1>
       <div className={styles.text}>
         <p>
-          I am 34 year old software engineer with 8 years of remote working experience.
+          I am {myAge} years old software engineer with {myCareerYears} years of remote working experience.
           Ever since my early school days I was in love with algorithms. My passion is
           not only to write code but also to write it efficiently and to optimise it in
           CPU and memory usage.
