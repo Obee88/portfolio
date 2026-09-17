@@ -6,7 +6,11 @@
   flex-direction: column;
   position: relative;
   .slider {
-    width: 100%;    
+    width: 100%;
+    // React 17+ registers touchmove passively at the root, so the slider
+    // library's preventDefault() cannot stop the browser from treating a drag
+    // as a page scroll. Declaring the intent in CSS does.
+    touch-action: none;
   }
   .labels {
     display: flex;
@@ -17,6 +21,13 @@
     left: 0;
     right: 0;
     top: 34px;
+    // This box is stretched across the full width on top of the track, so it
+    // swallowed touches aimed at the slider between the two labels. Only the
+    // labels themselves need to be interactive.
+    pointer-events: none;
+    div {
+      pointer-events: auto;
+    }
     div:hover {
       text-decoration: underline;
       cursor: pointer;
@@ -31,25 +42,32 @@
     left: 0;
     right: 0;
     top: 0;
+    // Caption only: it sat over the top of the track and ate touches there.
+    pointer-events: none;
   }
 
-  // Less/More are the practical way to step the level on a phone, but at
-  // 23x11 they are far too small to hit. Pad them out (negative margins keep
-  // them visually where they were) and reserve the extra room below the track.
+  // On desktop the caption and the Less/More labels are absolutely positioned
+  // so they tuck compactly around the track. On a phone that overlaps them
+  // with the 12px thumb, and Chrome's touch adjustment then snaps finger
+  // presses onto the nearby labels instead of the slider - which is what made
+  // the slider impossible to drag. There is room to stack them here instead.
   @media (max-width: $mobile) {
-    padding-bottom: 24px;
+    .info {
+      position: static;
+      order: -1;
+      font-size: 13px;
+      line-height: 16px;
+      margin-bottom: 2px;
+    }
     .labels {
-      top: 28px;
+      position: static;
+      margin-top: 12px;
       font-size: 13px;
       line-height: 16px;
       div {
-        padding: 10px 14px;
-        margin: -10px -14px;
+        padding: 8px 14px;
+        margin: 0 -14px;
       }
-    }
-    .info {
-      font-size: 13px;
-      line-height: 16px;
     }
   }
 }
