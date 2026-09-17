@@ -13,6 +13,7 @@ const DetailsSlider = ({ min = 1, max = 3, key }) => {
     <div className={styles.container}>
       <div className={styles.slider}>
         <Slider
+          classes={{ pointer: styles.thumb }}
           min={min}
           max={max}
           value={value}

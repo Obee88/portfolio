@@ -11,6 +11,23 @@
     // library's preventDefault() cannot stop the browser from treating a drag
     // as a page scroll. Declaring the intent in CSS does.
     touch-action: none;
+
+    // The library draws a 12px thumb, which is a small thing to aim a finger
+    // at. Passed in via the Slider's classes prop; nesting under .slider beats
+    // the library's own single-class rule without needing !important.
+    .thumb {
+      width: 20px;
+      height: 20px;
+
+      // The hover/press halo is positioned with offsets computed for a 12px
+      // thumb, so it sits off-centre once the thumb grows. Centring it on the
+      // thumb keeps both the hover and the pressed size correct.
+      &:before {
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
   }
   .labels {
     display: flex;
