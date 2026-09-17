@@ -1,4 +1,31 @@
-[See portfolio Live App](https://obee88.github.io/portfolio)
+[See portfolio Live App](https://davor.obilinovic.codes.hr)
+
+## Deployment
+
+The app is deployed to the managed VPS at `vps.codes.hr` (see `MANAGED_PROJECT_GUIDE.md`).
+
+Every push to `main` runs `.github/workflows/deploy.yml`, which:
+
+1. Builds the `Dockerfile` and pushes it to `ghcr.io/obee88/portfolio:<sha>` (and `:latest`).
+2. Sends an HMAC-signed webhook to the VPS dashboard, which pulls the image and restarts the container.
+
+Two repository secrets are required, both shown in the dashboard after registering the project:
+
+- `WEBHOOK_URL`
+- `WEBHOOK_SECRET`
+
+Dashboard settings for this project:
+
+| Setting | Value |
+|---|---|
+| Slug | `portfolio` |
+| Image | `ghcr.io/obee88/portfolio` |
+| Port | `8080` |
+| Health check | `/healthz` |
+| Domain | `davor.obilinovic.codes.hr` |
+| Database | not needed |
+
+The container serves the static CRA build with nginx as a non-root user on port 8080.
 
 # Getting Started with Create React App
 

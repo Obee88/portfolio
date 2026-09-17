@@ -1,20 +1,24 @@
 # Stage 1: Build React app
-FROM node:14 as build
+# node-sass 9 only ships prebuilt bindings up to Node 20, so pin the build image.
+FROM node:20-bullseye AS build
 
 WORKDIR /app
 
-COPY package.json ./
-RUN npm install
+COPY package.json yarn.lock ./
+RUN yarn install --frozen-lockfile
 
 COPY . .
-RUN npm run build
+RUN yarn build
 
-# Stage 2: Serve React app with nginx
-FROM nginx:1.21
+# Stage 2: Serve the static build with nginx as a non-root user
+FROM nginxinc/nginx-unprivileged:1.27-alpine AS runner
 
+COPY nginx.conf /etc/nginx/conf.d/default.conf
 COPY --from=build /app/build /usr/share/nginx/html
-#COPY nginx.conf /etc/nginx/conf.d/default.conf
 
-EXPOSE 80
+EXPOSE 8080
+
+HEALTHCHECK --interval=15s --timeout=5s --retries=3 --start-period=30s \
+  CMD wget -qO- http://localhost:8080/healthz || exit 1
 
 CMD ["nginx", "-g", "daemon off;"]
