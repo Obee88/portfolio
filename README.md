@@ -20,7 +20,7 @@ Dashboard settings for this project:
 |---|---|
 | Slug | `portfolio` |
 | Image | `ghcr.io/obee88/portfolio` |
-| Port | `8080` |
+| Port | `80` |
 | Health check | `/healthz` |
 | Domain | `davor.obilinovic.codes.hr` |
 | Database | not needed |
