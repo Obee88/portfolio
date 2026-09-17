@@ -43,16 +43,22 @@ jobs:
           cache-to: type=gha,mode=max
 
       - name: Notify VPS dashboard
+        env:
+          URL: ${{ secrets.WEBHOOK_URL }}
+          SECRET: ${{ secrets.WEBHOOK_SECRET }}
+          SHA: ${{ steps.meta.outputs.sha }}
+          IMAGE: ${{ steps.meta.outputs.image }}
         run: |
-          URL=$(printf '%s' "${{ secrets.WEBHOOK_URL }}" | tr -d '[:space:]')
+          URL=$(printf '%s' "$URL" | tr -d '[:space:]')
           TS=$(date +%s)
           BODY=$(jq -nc \
-            --arg image "${{ steps.meta.outputs.image }}" \
-            --arg sha "${{ steps.meta.outputs.sha }}" \
+            --arg sha "$SHA" \
+            --arg ref "$GITHUB_REF" \
+            --arg image "$IMAGE" \
             --argjson ts "$TS" \
-            '{ image: $image, sha: $sha, ts: $ts }')
-          SIG="sha256=$(echo -n "$BODY" | openssl dgst -sha256 -hmac "${{ secrets.WEBHOOK_SECRET }}" | awk '{print $2}')"
-          curl -sf -X POST "$URL" \
+            '{sha: $sha, ref: $ref, image: $image, timestamp: $ts}')
+          SIG=$(printf '%s' "$BODY" | openssl dgst -sha256 -hmac "$SECRET" -binary | xxd -p -c 256)
+          curl -fsS -X POST "$URL" \
             -H "Content-Type: application/json" \
-            -H "X-Signature: $SIG" \
+            -H "X-Signature: sha256=$SIG" \
             -d "$BODY"
