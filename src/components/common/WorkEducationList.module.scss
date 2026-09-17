@@ -1,3 +1,5 @@
+@import '../../variables.scss';
+
 .container {
   width: 100%;
   display: flex;
@@ -22,6 +24,7 @@
   }
   .items {
     flex: 1;
+    min-width: 0;
     display: flex;
     flex-direction: column;
     .item {
@@ -75,6 +78,7 @@
         .content {
           display: flex;
           flex-direction: column;
+          min-width: 0;
           .role {
             font-weight: 600;
             margin-top: 16px;
@@ -82,6 +86,7 @@
           .bullets {
             list-style-type: "- ";
             margin-top: 4px;
+            padding-left: 20px;
           }
         }
       }
@@ -89,6 +94,39 @@
         display: flex;
         .keyword {
           margin-right: 4px;
+        }
+      }
+    }
+  }
+
+  // The 210px icon rail eats half a phone screen, so stack it above the list.
+  @media (max-width: $mobile) {
+    flex-direction: column;
+    .side {
+      flex: 0 0 auto;
+      margin-bottom: 8px;
+      .content svg {
+        width: 72px;
+        height: 72px;
+      }
+    }
+    .items .item {
+      padding: 12px 0;
+      .head .left {
+        .logo {
+          flex: 0 0 36px;
+        }
+        .details .name {
+          font-size: 18px;
+        }
+      }
+      .body .indent {
+        flex: 0 0 12px;
+      }
+      .keywords {
+        flex-wrap: wrap;
+        .keyword {
+          margin-top: 4px;
         }
       }
     }

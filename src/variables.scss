@@ -55,3 +55,8 @@ $teal:             #0DBDB0;
 $teal-light:       #7CF4E4;
 $teal-lighter:     #C2F5EE;
 $teal-lightest:    #EBFFFC;
+
+// Breakpoints. $mobile is the point where the 900px desktop column stops
+// fitting side-by-side layouts (portrait phones and small tablets).
+$mobile: 640px;
+$tablet: 900px;

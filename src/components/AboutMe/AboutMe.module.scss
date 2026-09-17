@@ -1,5 +1,14 @@
+@import '../../variables.scss';
+
 .container {
   .text {
     padding: 0 16px;
+  }
+
+  // The app content already provides the 16px gutter on mobile.
+  @media (max-width: $mobile) {
+    .text {
+      padding: 0;
+    }
   }
 }

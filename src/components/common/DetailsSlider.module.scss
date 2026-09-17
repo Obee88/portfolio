@@ -1,3 +1,5 @@
+@import '../../variables.scss';
+
 .container {
   width: 100%;
   display: flex;
@@ -29,5 +31,25 @@
     left: 0;
     right: 0;
     top: 0;
+  }
+
+  // Less/More are the practical way to step the level on a phone, but at
+  // 23x11 they are far too small to hit. Pad them out (negative margins keep
+  // them visually where they were) and reserve the extra room below the track.
+  @media (max-width: $mobile) {
+    padding-bottom: 24px;
+    .labels {
+      top: 28px;
+      font-size: 13px;
+      line-height: 16px;
+      div {
+        padding: 10px 14px;
+        margin: -10px -14px;
+      }
+    }
+    .info {
+      font-size: 13px;
+      line-height: 16px;
+    }
   }
 }

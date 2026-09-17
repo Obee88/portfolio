@@ -3,6 +3,7 @@
 .container {
   display: flex;
   flex-direction: column;
+  max-width: 100%;
   .row {
     width: 100%;
     display: flex;
@@ -16,8 +17,14 @@
   }
   .frame {
     flex: 1;
+    // The embedded demos are fixed-size apps (660x400) that cannot reflow, so
+    // pan them inside their own scroller rather than letting them widen the page.
+    max-width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
     iframe {
       border: 1px solid $main-color;
+      display: block;
     }
   }
 }

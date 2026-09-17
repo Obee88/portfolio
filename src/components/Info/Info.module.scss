@@ -1,3 +1,5 @@
+@import '../../variables.scss';
+
 .container {
   display: flex;
   width: 100%;
@@ -12,7 +14,31 @@
     border-radius: 1rem;
     width: 300px;
     height: 300px;
+    flex: 0 0 auto;
     background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
     background-image: url("./image.jpeg");
+  }
+
+  // A 300px portrait does not fit beside the intro text on a phone, so lead
+  // with the photo and let the greeting follow underneath.
+  @media (max-width: $mobile) {
+    flex-direction: column-reverse;
+    align-items: center;
+    .picture {
+      width: 180px;
+      height: 180px;
+      margin-bottom: 16px;
+    }
+    .info {
+      width: 100%;
+      // The hero is hard-wrapped with <br> for the 900px column; on a phone
+      // those breaks strand orphans, so let the copy reflow. Info.jsx keeps a
+      // space before each <br> so the sentences stay separated once hidden.
+      br {
+        display: none;
+      }
+    }
   }
 }

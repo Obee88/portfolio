@@ -42,6 +42,7 @@
         .left {
           display: flex;
           flex:1;
+          min-width: 0;
           .name {
             font-size: 24px;
             flex: 1;
@@ -91,6 +92,7 @@
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
+        min-width: 0;
         .role,
         .employer {
           display: flex;
@@ -98,6 +100,8 @@
         }
         .description {
           margin-top: 16px;
+          // Long tech names in the prose should wrap rather than widen the page.
+          overflow-wrap: break-word;
         }
         .preview {
           margin-top: 8px;
@@ -111,6 +115,55 @@
           .tag {
             margin-right: 4px;
             margin-top: 4px;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: $mobile) {
+    .header {
+      // The app header collapses to its 80px track; keep the panel below it.
+      .top {
+        flex-direction: column;
+        .title {
+          font-size: 24px;
+        }
+        .slider {
+          flex: 0 0 auto;
+          width: 100%;
+          margin: 4px 0 12px;
+        }
+      }
+    }
+    .projects {
+      padding: 0;
+      .project {
+        padding: 12px 0;
+        .top {
+          flex-direction: column;
+          align-items: flex-start;
+          .left .name {
+            font-size: 20px;
+          }
+          .right {
+            width: 100%;
+            margin-top: 8px;
+            justify-content: space-between;
+            align-items: center;
+            .period {
+              align-items: center;
+            }
+            // Comfortable touch targets for the demo / repo actions.
+            button {
+              margin-left: 0;
+              padding: 8px 12px;
+            }
+            .previewActions a {
+              max-height: none;
+              padding: 8px;
+              margin-left: 0;
+            }
           }
         }
       }

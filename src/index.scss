@@ -7,6 +7,10 @@ body {
   font-family: Inter, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  // Long unbroken tokens (URLs, tech names) must not widen the viewport.
+  overflow-wrap: break-word;
+  // Stop iOS Safari inflating text in the stacked mobile columns.
+  -webkit-text-size-adjust: 100%;
 }
 
 code {
@@ -40,5 +44,19 @@ button.link {
   font-weight: bold;
   &:hover {
     text-decoration: underline;
+  }
+}
+
+@media (max-width: $mobile) {
+  p {
+    line-height: 26px;
+    margin-bottom: 24px;
+  }
+  h1 {
+    font-size: 26px;
+  }
+  // The glow is sized for a 900px column and bleeds off a phone screen.
+  .highlight:hover {
+    box-shadow: none;
   }
 }
