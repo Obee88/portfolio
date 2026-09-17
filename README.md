@@ -20,12 +20,12 @@ Dashboard settings for this project:
 |---|---|
 | Slug | `portfolio` |
 | Image | `ghcr.io/obee88/portfolio` |
-| Port | `80` |
+| Port | `3000` |
 | Health check | `/healthz` |
 | Domain | `davor.obilinovic.codes.hr` |
 | Database | not needed |
 
-The container serves the static CRA build with nginx as a non-root user on port 8080.
+The container serves the static CRA build with nginx as a non-root user on port 3000.
 
 # Getting Started with Create React App
 
