@@ -1,14 +1,33 @@
+// A Detail is an inline clause spliced into a sentence, so hiding one has to
+// close the gap it leaves behind. Animating opacity alone held the clause's
+// full width for the whole transition — a blank hole mid-sentence — and then
+// dropped it in a single frame, snapping the paragraph shut. Collapsing
+// font-size alongside the fade lets the surrounding text reflow smoothly.
+.detail {
+  // font-size is animated, so the collapsed state must be recoverable.
+  font-size: 1em;
+}
+
 .detail-enter {
   opacity: 0;
+  font-size: 0;
 }
+
 .detail-enter-active {
   opacity: 1;
-  transition: opacity 400ms;
+  font-size: 1em;
+  // Open the space first, then fade the text into it.
+  transition: font-size 300ms ease-out, opacity 300ms ease-in 100ms;
 }
+
 .detail-exit {
   opacity: 1;
+  font-size: 1em;
 }
+
 .detail-exit-active {
   opacity: 0;
-  transition: opacity 400ms;
+  font-size: 0;
+  // Fade the text out first, then close the space behind it.
+  transition: opacity 200ms ease-out, font-size 300ms ease-in 100ms;
 }

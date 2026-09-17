@@ -1,26 +1,28 @@
-
-import React, { useState } from 'react';
+import React, { useRef } from 'react';
 import { useSelector } from 'react-redux';
 import { CSSTransition } from 'react-transition-group';
 import { getDetailsLvl } from '../../state/selectors';
 import './Detail.scss';
 
-const Detail = ({ lvl , children }) => {
+// Keep in sync with the transition durations in Detail.scss.
+const TIMEOUT = 400;
+
+const Detail = ({ lvl, children }) => {
   const detailsLvl = useSelector(getDetailsLvl);
-  const shouldShow = lvl <= detailsLvl;
-  const [visible, setVisible] = useState(true);
+  const nodeRef = useRef(null);
+
   return (
     <CSSTransition
-      in={shouldShow}
-      timeout={400}
+      in={lvl <= detailsLvl}
+      nodeRef={nodeRef}
+      timeout={TIMEOUT}
       classNames="detail"
-      onEnter={() => setVisible(true)}
-      onExited={() => setVisible(false)}
+      mountOnEnter
+      unmountOnExit
     >
-      <span>{visible ? children : null}</span>
+      <span className="detail" ref={nodeRef}>{children}</span>
     </CSSTransition>
   );
-   
 };
 
 export default Detail;
