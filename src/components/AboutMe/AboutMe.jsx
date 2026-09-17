@@ -19,39 +19,39 @@ const AboutMe = ({ className }) => {
       <h1>About Me</h1>
       <div className={styles.text}>
         <p>
-          I am {myAge} year-old software engineer with {myCareerYears} years of remote working experience.
-          Ever since my early school days, I was in love with algorithms. My passion is
-          not only to write code but also to write it efficiently and optimize it for CPU and memory usage.
+          I am {myAge} years old and I have been a software engineer for {myCareerYears} years,
+          all of them remote. Croatian, working the whole time with teams somewhere else, first
+          in Munich and then in New York. That is not a recent arrangement I adapted to; it is
+          the only way I have ever worked.
         </p>
         <p>
-          During my career, I have learned that being a remote working engineer does not only mean being a
-          good programmer. For the past five years, I have worked closely with designers to design and develop
-          beautiful user experiences, and with product teams to create sustainable product roadmaps. Besides 
-          implementing new features and fixing bugs, I also participated in code reviews with peers and managers 
-          to ensure that each increment adheres to the original vision as described in the user story. When working 
-          in a company, I am strongly motivated to understand the business side, our users, their requirements, 
-          and to deliver results. I have a passion for continued learning and sharing my knowledge with others. 
-          I love to pick up new technologies and skills, but I also enjoy mentoring less experienced team members.
+          What I am good at is owning a product surface and the shared pieces underneath it.
+          At Sematext I was the only frontend engineer on two product areas for years, working
+          directly with one designer and one API engineer, and the components I built there
+          ended up being used by most of the rest of the application. I care about that kind of
+          result more than about how much code there is, because it is a statement about what
+          other people chose to build on.
         </p>
         <p>
-          When it comes to architectural, product, design, or process decisions, I collaborate with strong judgment 
-          and attention to detail. When discussing new capabilities, my first instinct is to think of the user story 
-          rather than the feature set. I prioritize making the most common interactions effortless, rather than making 
-          anything possible.
+          Most recently I led a small team owning a web application and its API, and built the
+          system we used to run AI coding work through defined stages rather than ad hoc
+          prompting. I have spent enough time on that to have an actual opinion about it: the
+          useful question is not whether an agent can write the code, it is what stops bad work
+          from reaching the branch. Tests, review gates and evidence you can check afterwards
+          still do that job, and nothing about AI changes it.
         </p>
         <p>
-          I am very independent, adaptable, and self-directed. In my day-to-day work, I require no other person to identify 
-          tasks and am capable of solving my own problems. I think of myself as an intelligent and fast-learning person. Even 
-          though I tend to strongly stick to ideas that I think are good, I have learned that getting wedded to ideas is not 
-          {'always the best way to go. I also learned to discard prototypes when something isn\'t working or isn\'t showing '}
-          expected results. I care about writing clean, well-documented code and appreciate static typing. I also care about 
-          browser performance and like to use my knowledge in algorithms to ensure things are fast.
+          I am independent and self-directed. Nobody needs to hand me tasks, and I would rather
+          solve a problem than escalate it. I care about writing clean, documented code, I
+          prefer static typing, and I use what I know about algorithms to keep things fast,
+          because performance is a feature and slowness is a bug that nobody files.
         </p>
         <p>
-          I hope to join a team with an established strong engineering culture. I am comfortable working with cross-functional 
-          and cross-cultural teams, and I believe that bringing my experience and knowledge of best practices can contribute to 
-          its growth. I am used to working remotely, and my happiness at work comes from human relationships, growth opportunities, 
-          and a team mindset.
+          When it comes to architecture, product or process decisions, my first instinct is to
+          think about the user story rather than the feature set, and to make the common path
+          effortless rather than making everything possible. I enjoy mentoring less experienced
+          engineers, and I am comfortable in cross-functional and cross-cultural teams. What I
+          am looking for is a team with a real engineering culture, where I can stay hands-on.
         </p>
       </div>
       <Divider />

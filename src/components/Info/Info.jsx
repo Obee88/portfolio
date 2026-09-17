@@ -1,5 +1,6 @@
 import classNames from 'classnames';
 import React from 'react';
+import moment from 'moment';
 import styles from './Info.module.scss';
 
 const Info = ({ className }) => (
@@ -7,8 +8,9 @@ const Info = ({ className }) => (
     <div className={styles.info}>
       <h1>Hello, I'm Davor.{'\n'}</h1>
       <p>
-        I am a Full Stack Engineer but my passion is Data Visualisation,<br />
-        Algorithms and Frontend development.
+        Full Stack Engineer, {moment().diff('2013-01-01', 'years', false)} years, all of it remote.<br />
+        I build web applications and the APIs behind them, and lately<br />
+        the systems teams use to build software with AI.
       </p>
     </div>
     <div className={styles.picture}>

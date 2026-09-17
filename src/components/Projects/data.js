@@ -2,11 +2,64 @@ import D from '../common/Detail';
 
 export const workProjects = [
   {
+    name: 'Developer Security Platform, web app and API',
+    employer: 'Archipelo',
+    type: 'Professional Assignment',
+    role: 'Interface Engineer, then App Team Lead',
+    period: 'Oct 2024 - Aug 2026',
+    tags: [
+      'TypeScript', 'React', 'AI Agents', 'Claude Code', 'Team Lead',
+    ],
+    description: (<>
+      <D lvl={1}>
+        A developer security platform, where I led the app team: five engineers owning the
+        web application and the API behind it.&nbsp;
+      </D>
+      <D lvl={2}>
+        I joined as an interface engineer while the company was still in stealth and moved
+        into leading the team, which meant owning the product surface end to end rather than
+        a slice of it.&nbsp;
+      </D>
+      <D lvl={2}>
+        We rewrote the application and the API from scratch as AI capability landed in the
+        product. The code we replaced carried leftovers from the company's earlier changes of
+        direction, and it was in the way of what the product was becoming.&nbsp;
+      </D>
+      <D lvl={1}>
+        I also built the company's software factory, the system for running AI coding work
+        through defined stages rather than ad hoc prompting.&nbsp;
+      </D>
+      <D lvl={2}>
+        It attaches to a repository read-only and adds nothing to it. Six workflows, from
+        turning a requirement into a specification through implementation, verification,
+        review and release. Eighteen specialist roles with non-overlapping authority, so the
+        agent that builds something is never the one that signs it off.&nbsp;
+      </D>
+      <D lvl={3}>
+        The rules that carry it are simple and strict: no implementation without a
+        specification, no merge without verification, and an acceptance criterion with no
+        covering test is a gap rather than a pass. Verification produces an evidence artifact
+        tied to a revision, reviewable by someone who was not there for the run. Agents open
+        pull requests and never merge; branch protection, not the tooling, is the real
+        control.&nbsp;
+      </D>
+      <D lvl={3}>
+        I took the question of how agents should authenticate to GitHub to a company decision:
+        five options with their trade-offs, ending in engineer-scoped tokens, commit signing
+        verified against GitHub itself rather than assumed from local configuration, and
+        sensitive CI paths routed to named human review.&nbsp;
+      </D>
+      <D lvl={2}>
+        I built it in five weeks and ran my own ticket work through it.&nbsp;
+      </D>
+    </>),
+  },
+  {
     name: 'Sematext Cloud',
     employer: 'Sematext',
     type: 'Professional Assignment',
     role: 'Full Stack Engineer',
-    period: 'Jan 2018 - present',
+    period: 'Jan 2018 - Oct 2024',
     tags: [
       'JavaScript', 'TypeScript', 'React', 'Redux', 'ES6', 'SCSS',
     ],
@@ -61,6 +114,34 @@ export const workProjects = [
         I closely cooperated with other engineers on defining the subproduct features. After features were defined
         I would cooperate with designer on creating visual design for this subproduct and finally I was fully responsible
         for implementing the frontend solution.&nbsp;
+      </D>
+      <D lvl={1}>
+        The part I am proudest of is the two shared components the rest of the application was
+        built on: the data table and the flyout panel.&nbsp;
+      </D>
+      <D lvl={2}>
+        The table is a base component plus composable wrappers, so each module takes only the
+        behaviour it needs, sorting, filtering, selection, inline editing, expandable rows,
+        column widths remembered per user. Rendering is virtualised, because these tables list
+        thousands of hosts and containers. A typed column library turns a new table into
+        configuration rather than implementation.&nbsp;
+      </D>
+      <D lvl={2}>
+        The flyout is a panel with its own router. It renders existing pages inside itself and
+        moves between them without losing the page underneath, which is what makes pivoting
+        around infrastructure work: pod to host to processes to logs, with the original list
+        still there.&nbsp;
+      </D>
+      <D lvl={3}>
+        Its navigation history is encoded per query parameter into the URL, so the path you
+        took through it is bookmarkable and shareable, browser back steps through it, and the
+        whole thing survives a reload. Nested history inside a URL is a genuinely interesting
+        problem and the solution turned out to be small.&nbsp;
+      </D>
+      <D lvl={2}>
+        Both ended up adopted across most of the application, by modules other people owned.
+        That is the result I would point at: not how much of it there is, but what other teams
+        chose to build on.&nbsp;
       </D>
       <D lvl={2}>
         In next etape I became the owner of Fleet subproduct.&nbsp;
@@ -234,6 +315,78 @@ export const workProjects = [
 ];
 
 export const privateProjects = [
+  {
+    name: 'LIPA',
+    role: 'Everything (one man project)',
+    type: 'Private Project',
+    period: 'Apr 2026 - present',
+    tags: [
+      'TypeScript', 'React', 'Node.js', 'Fastify', 'Python', 'Document AI',
+      'PostgreSQL', 'Prisma', 'Redis', 'React Native', 'Docker',
+    ],
+    description: () => (
+      <>
+        <D lvl={1}>
+          LIPA turns a photograph of an invoice into structured, validated data that Croatian
+          bookkeeping software can actually accept.&nbsp;
+        </D>
+        <D lvl={2}>
+          You point a phone at an invoice; what comes back is a proposal you confirm rather
+          than a form you fill in. It is built for Croatian rules from the ground up, OIB
+          validation, PDV handling and the e-Racun electronic invoice standard, and exports to
+          e-Racun XML and JSON.&nbsp;
+        </D>
+        <D lvl={3}>
+          It is aimed at small businesses, bookkeeping firms and freelancers who do their own
+          books, which in Croatia is a lot of people and a lot of manual typing.&nbsp;
+        </D>
+        <D lvl={2}>
+          It is a cloud platform rather than a script: multi-tenant organisations, token-based
+          authentication, a job queue, object storage, subscription and bank-transfer billing,
+          a mobile capture app, an admin dashboard, and a container deployment behind a reverse
+          proxy with automatic certificates.&nbsp;
+        </D>
+        <D lvl={3}>
+          Eight modules, deliberately isolated from each other: a Node and Fastify API in
+          TypeScript, a React and Vite web app, a Python worker for the document AI pipeline, a
+          shared Prisma schema over PostgreSQL, a standalone admin app, a React Native capture
+          app, a framework-free shared package holding the invoice contract and its validation,
+          and the infrastructure configuration.&nbsp;
+        </D>
+        <D lvl={1}>
+          The interesting part is not the AI call. It is everything after it.&nbsp;
+        </D>
+        <D lvl={2}>
+          Document AI gives you fields and confidence scores. It does not give you a correct
+          invoice: totals that do not add up, VAT split across rates that has to be inferred,
+          deposits and return fees that belong in one place and appear in another.&nbsp;
+        </D>
+        <D lvl={3}>
+          So between the raw read and something a bookkeeper can confirm sits a staged
+          derivation pipeline of about twenty-five steps. A consistency check on the read that
+          proposes repairs, provisional totals, detection of what basis the line items are
+          stated on, assignment of amounts to VAT brackets through a search that only commits
+          when the answer is unique, splitting of return fees, a derivation fixpoint, a
+          validation pass, and finally a ranking that tells a human which three fields are
+          worth their attention instead of forty that are not.&nbsp;
+        </D>
+        <D lvl={2}>
+          Alongside it I built a playground: an internal tool that runs a single stage in
+          isolation, diffs two proposals field by field, and exports any run as a regression
+          fixture.&nbsp;
+        </D>
+        <D lvl={3}>
+          That tool is the reason the pipeline can keep changing. A probabilistic system that
+          nobody can inspect stage by stage gets frozen the moment it works, because no one can
+          tell what a change broke. Being able to replay a real invoice through one stage and
+          see exactly what moved is what makes it safe to keep improving.&nbsp;
+        </D>
+        <D lvl={3}>
+          Currently running on staging, ahead of launch.&nbsp;
+        </D>
+      </>
+    ),
+  },
   {
     name: 'Lancer-Mobile',
     role: 'Full-Stack Developer',
