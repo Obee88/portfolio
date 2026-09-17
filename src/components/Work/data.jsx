@@ -69,8 +69,7 @@ const data = [
       'Rewrote the application and the API from scratch as AI capability landed in the product',
       'Built the internal software factory: the workflows, specialist agent roles, verification gates and commit-signing policy for running AI coding work through defined stages',
     ],
-    // TODO: add the Archipelo stack once confirmed (profile/open-questions.md).
-    keywords: ['TypeScript', 'React', 'AI Agents', 'Claude Code', 'Team Lead'],
+    keywords: ['TypeScript', 'Svelte', 'AI Agents', 'Claude Code', 'Team Lead'],
   },
 ];
 

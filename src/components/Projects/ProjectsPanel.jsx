@@ -32,7 +32,7 @@ const ProjectsPanel = ({ items, className, title }) => {
         </div>
       </div>
       <div className={styles.projects}>
-        {items.map(({ tags, name, employer, role, description, period, preview = {}, repository, type }) => (
+        {items.map(({ tags, name, employer, role, description, period, preview = {}, repository, website, type }) => (
           <div key={name} className={classNames(styles.project, 'highlight')} >
             <div className={styles.top}>
               <div className={styles.left}>
@@ -42,31 +42,37 @@ const ProjectsPanel = ({ items, className, title }) => {
               </div>
               <div className={styles.right}>
                 <div className={styles.period}>
-                  {!isEmpty(preview) && (
+                  {(!isEmpty(preview) || repository || website) && (
                     <div className={styles.previewActions}>
-                      <button
-                        onClick={() => togglePreviewVisible(name)}
-                      >
-                        {isPreviewVisible(name) ? 'Hide' : 'Show'}
-                        &nbsp;
-                        preview
-                      </button>
-                      <a
-                        rel="noreferrer"
-                        href={repository}
-                        target="_blank"
-                        title="open git repository"
-                      >
-                        <GitHubIcon className={styles.ghIcon} />
-                      </a>
-                      <a
-                        rel="noreferrer"
-                        href={preview.url}
-                        target="_blank"
-                        title="open demo page"
-                      >
-                        <ExternalLinkIcon />
-                      </a>
+                      {!isEmpty(preview) && (
+                        <button
+                          onClick={() => togglePreviewVisible(name)}
+                        >
+                          {isPreviewVisible(name) ? 'Hide' : 'Show'}
+                          &nbsp;
+                          preview
+                        </button>
+                      )}
+                      {repository && (
+                        <a
+                          rel="noreferrer"
+                          href={repository}
+                          target="_blank"
+                          title="open git repository"
+                        >
+                          <GitHubIcon className={styles.ghIcon} />
+                        </a>
+                      )}
+                      {(preview.url || website) && (
+                        <a
+                          rel="noreferrer"
+                          href={preview.url || website}
+                          target="_blank"
+                          title={preview.url ? 'open demo page' : 'open project website'}
+                        >
+                          <ExternalLinkIcon />
+                        </a>
+                      )}
                     </div>
                   )}
                   {period}

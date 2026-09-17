@@ -8,7 +8,7 @@ export const workProjects = [
     role: 'Interface Engineer, then App Team Lead',
     period: 'Oct 2024 - Aug 2026',
     tags: [
-      'TypeScript', 'React', 'AI Agents', 'Claude Code', 'Team Lead',
+      'TypeScript', 'Svelte', 'AI Agents', 'Claude Code', 'Team Lead',
     ],
     description: (<>
       <D lvl={1}>
@@ -320,6 +320,7 @@ export const privateProjects = [
     role: 'Everything (one man project)',
     type: 'Private Project',
     period: 'Apr 2026 - present',
+    website: 'https://lipa.codes.hr',
     tags: [
       'TypeScript', 'React', 'Node.js', 'Fastify', 'Python', 'Document AI',
       'PostgreSQL', 'Prisma', 'Redis', 'React Native', 'Docker',
