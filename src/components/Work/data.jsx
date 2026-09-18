@@ -1,14 +1,7 @@
 import {ReactComponent as SematextIcon} from './sematext-icon.svg';
 import replyLogo from './reply-logo.png';
 import gdiLogo from './GDI-logo.png';
-
-// TODO: replace with a real Archipelo mark if one is available.
-const ArchipeloLogo = (props) => (
-  <svg viewBox="0 0 48 48" width="48" height="48" {...props}>
-    <rect x="2" y="2" width="44" height="44" rx="10" fill="#1f2a44" />
-    <path d="M24 13 L34 34 H29.5 L24 22 L18.5 34 H14 Z" fill="#ffffff" />
-  </svg>
-);
+import archipeloLogo from './archipelo-logo.png';
 
 const data = [
   {
@@ -61,7 +54,7 @@ const data = [
     institution: {
       name: 'Archipelo',
       location: 'USA (remote)',
-      Logo: ArchipeloLogo,
+      Logo: (props) => <img src={archipeloLogo} alt="Archipelo" {...props} />,
     },
     role: 'Interface Engineer, then App Team Lead',
     bullets: [
