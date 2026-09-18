@@ -38,7 +38,11 @@
           flex: 1;
           display: flex;
           .logo {
-            flex: 0 0 48px;
+            // Width comes from the mark plus an explicit gap, so the spacing
+            // next to the institution name is stated rather than being
+            // whatever slack is left inside a fixed-width column.
+            flex: 0 0 auto;
+            margin-right: 16px;
             svg,
             img {
               width: 32px;
@@ -114,7 +118,7 @@
       padding: 12px 0;
       .head .left {
         .logo {
-          flex: 0 0 36px;
+          margin-right: 10px;
         }
         .details .name {
           font-size: 18px;
