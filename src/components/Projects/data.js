@@ -43,14 +43,17 @@ export const workProjects = [
         pull requests and never merge; branch protection, not the tooling, is the real
         control.&nbsp;
       </D>
-      <D lvl={3}>
-        I took the question of how agents should authenticate to GitHub to a company decision:
-        five options with their trade-offs, ending in engineer-scoped tokens, commit signing
-        verified against GitHub itself rather than assumed from local configuration, and
-        sensitive CI paths routed to named human review.&nbsp;
-      </D>
       <D lvl={2}>
-        I built it in five weeks and ran my own ticket work through it.&nbsp;
+        It treats knowledge as seriously as code. Every kind of knowledge has a defined type
+        and a defined home, kept as its own artifact.&nbsp;
+      </D>
+      <D lvl={3}>
+        Specifications and decision records are durable and live in the repository. Working
+        state lives in issues and is explicitly provisional. The pull request has a required
+        structure, summary, traceability, decisions, scope, verification, and carries the
+        motivation and acceptance criteria into the commit history, so the record survives
+        losing the issue tracker. Every working note has exactly one fate: promoted to a
+        durable artifact, or expired.&nbsp;
       </D>
     </>),
   },

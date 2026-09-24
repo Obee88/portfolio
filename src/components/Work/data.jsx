@@ -61,7 +61,7 @@ const data = [
       'Working remotely from Zagreb in a team spread across Europe and the US',
       'Led the app team, five engineers owning the web application and the API behind it',
       'Rewrote the application and the API from scratch as AI capability landed in the product',
-      'Built the internal software factory: the workflows, specialist agent roles, verification gates and commit-signing policy for running AI coding work through defined stages',
+      'Built the internal software factory: the workflows, specialist agent roles, verification gates and knowledge model for running AI coding work through defined stages',
     ],
     keywords: ['TypeScript', 'Svelte', 'AI Agents', 'Claude Code', 'Team Lead'],
   },
