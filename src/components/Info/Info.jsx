@@ -9,8 +9,8 @@ const Info = ({ className }) => (
       <h1>Hello, I'm Davor.{'\n'}</h1>
       <p>
         Full Stack Engineer, {moment().diff('2013-01-01', 'years', false)} years, all of it remote. <br />
-        I build web applications and the APIs behind them, and lately <br />
-        the systems teams use to build software with AI.
+        I build web applications and the APIs behind them, AI-first: <br />
+        agents implement, I specify, review and verify.
       </p>
     </div>
     <div className={styles.picture}>

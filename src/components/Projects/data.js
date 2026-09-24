@@ -116,8 +116,8 @@ export const workProjects = [
         for implementing the frontend solution.&nbsp;
       </D>
       <D lvl={1}>
-        The part I am proudest of is the two shared components the rest of the application was
-        built on: the data table and the flyout panel.&nbsp;
+        The part I am proudest of is the two shared components much of the rest of the application
+        was built on: the data table and the flyout panel.&nbsp;
       </D>
       <D lvl={2}>
         The table is a base component plus composable wrappers, so each module takes only the
@@ -139,7 +139,8 @@ export const workProjects = [
         problem and the solution turned out to be small.&nbsp;
       </D>
       <D lvl={2}>
-        Both ended up adopted across most of the application, by modules other people owned.
+        Both ended up adopted across more than half of the application's modules, most of them
+        owned by other people.
         That is the result I would point at: not how much of it there is, but what other teams
         chose to build on.&nbsp;
       </D>
@@ -381,6 +382,19 @@ export const privateProjects = [
           nobody can inspect stage by stage gets frozen the moment it works, because no one can
           tell what a change broke. Being able to replay a real invoice through one stage and
           see exactly what moved is what makes it safe to keep improving.&nbsp;
+        </D>
+        <D lvl={1}>
+          I built it alone, AI-first.&nbsp;
+        </D>
+        <D lvl={2}>
+          It runs on the agent workflow that grew out of the software factory: specification
+          first, agents implementing in small verified steps, and a single work queue where
+          landing a step includes moving the marker. Every module carries its own planning
+          docs and agent instructions.&nbsp;
+        </D>
+        <D lvl={3}>
+          That is how one person gets eight production modules in five months without losing
+          track of what each one is allowed to do.&nbsp;
         </D>
         <D lvl={3}>
           Currently running on staging, ahead of launch.&nbsp;

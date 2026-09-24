@@ -43,9 +43,9 @@ const data = [
     },
     role: 'Remote Full Stack Engineer',
     bullets: [
-      'Working remotely from Zagreb in a worldwide-distributed team',
-      'Sole frontend owner of two product areas of the observability platform, working with one designer and one API engineer per area',
-      'Built the shared data table and flyout panel that most of the rest of the application was built on',
+      'Working remotely from Zagreb in a team spread across Europe and the US',
+      'Owned two product areas of the observability platform, infrastructure monitoring and agent fleet management, working directly with design and API engineering',
+      'Built the shared data table and flyout panel, adopted across more than half of the application\'s modules',
     ],
     keywords: ['JavaScript', 'TypeScript', 'React', 'Redux', 'SCSS', 'Webpack'],
   },
@@ -58,6 +58,7 @@ const data = [
     },
     role: 'Interface Engineer, then App Team Lead',
     bullets: [
+      'Working remotely from Zagreb in a team spread across Europe and the US',
       'Led the app team, five engineers owning the web application and the API behind it',
       'Rewrote the application and the API from scratch as AI capability landed in the product',
       'Built the internal software factory: the workflows, specialist agent roles, verification gates and commit-signing policy for running AI coding work through defined stages',
