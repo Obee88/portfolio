@@ -3,6 +3,13 @@ name: Build & Deploy
 on:
   push:
     branches: [main]
+  workflow_dispatch:
+
+# One deploy at a time, in push order. Two pushes seconds apart used to build in
+# parallel, and the older image could land on the VPS last.
+concurrency:
+  group: deploy-production
+  cancel-in-progress: false
 
 jobs:
   build-and-deploy:
