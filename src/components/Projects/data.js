@@ -5,7 +5,7 @@ export const workProjects = [
     name: 'Developer Security Platform, web app and API',
     employer: 'Archipelo',
     type: 'Professional Assignment',
-    role: 'Interface Engineer, then App Team Lead',
+    role: 'App Team Lead',
     period: 'Oct 2024 - Aug 2026',
     tags: [
       'TypeScript', 'Svelte', 'AI Agents', 'Claude Code', 'Team Lead',
@@ -16,7 +16,7 @@ export const workProjects = [
         web application and the API behind it.&nbsp;
       </D>
       <D lvl={2}>
-        I joined as an interface engineer while the company was still in stealth and moved
+        I joined while the company was still in stealth and moved
         into leading the team, which meant owning the product surface end to end rather than
         a slice of it.&nbsp;
       </D>
@@ -62,7 +62,7 @@ export const workProjects = [
     employer: 'Sematext',
     type: 'Professional Assignment',
     role: 'Full Stack Engineer',
-    period: 'Jan 2018 - Oct 2024',
+    period: 'Jan 2018 - Sep 2024',
     tags: [
       'JavaScript', 'TypeScript', 'React', 'Redux', 'ES6', 'SCSS',
     ],
@@ -165,7 +165,7 @@ export const workProjects = [
     employer: 'ComSysto',
     type: 'Professional Assignment',
     role: 'Full Stack Engineer, AWS architect',
-    period: 'July 2016 - Jan 2018',
+    period: 'Jul 2016 - Dec 2017',
     tags: [
       'AWS', 'CloudFormation', 'Jenkins', 'Spring', 'Java',
     ],

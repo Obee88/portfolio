@@ -5,7 +5,7 @@ import archipeloLogo from './archipelo-logo.png';
 
 const data = [
   {
-    period: 'Oct 2011 - Dec 2012',
+    period: 'Sep 2011 - Mar 2012',
     institution: {
       name: 'GisData',
       location: 'Zagreb, Croatia',
@@ -18,7 +18,7 @@ const data = [
     keywords: ['C#', '.Net', 'Silverlight', 'JavaScript', 'Arc-GIS', 'MySQL'],
   },
   {
-    period: 'Jan 2013 - Jan 2018',
+    period: 'Jul 2013 - Dec 2017',
     institution: {
       name: 'ComSysto Gmbh',
       location: 'Munich, Germany',
@@ -34,7 +34,7 @@ const data = [
     keywords: ['JavaScript', 'React', 'Angular', 'Spring', 'MongoDB', 'Docker', 'AWS'],
   },
   {
-    period: 'Jan 2018 - Oct 2024',
+    period: 'Jan 2018 - Sep 2024',
     institution: {
       name: 'Sematext Group',
       location: 'New York, USA',
@@ -56,7 +56,7 @@ const data = [
       location: 'USA (remote)',
       Logo: (props) => <img src={archipeloLogo} alt="Archipelo" {...props} />,
     },
-    role: 'Interface Engineer, then App Team Lead',
+    role: 'App Team Lead',
     bullets: [
       'Working remotely from Zagreb in a team spread across Europe and the US',
       'Led the app team, five engineers owning the web application and the API behind it',
