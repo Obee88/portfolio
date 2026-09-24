@@ -375,16 +375,26 @@ export const privateProjects = [
           validation pass, and finally a ranking that tells a human which three fields are
           worth their attention instead of forty that are not.&nbsp;
         </D>
+        <D lvl={1}>
+          Most of the effort went into making the user story effortless.&nbsp;
+        </D>
         <D lvl={2}>
-          Alongside it I built a playground: an internal tool that runs a single stage in
-          isolation, diffs two proposals field by field, and exports any run as a regression
-          fixture.&nbsp;
+          The user never fills in a form. The pipeline does the work and flags only the few
+          fields worth a second look, so confirming an invoice is a glance rather than data
+          entry.&nbsp;
         </D>
         <D lvl={3}>
-          That tool is the reason the pipeline can keep changing. A probabilistic system that
-          nobody can inspect stage by stage gets frozen the moment it works, because no one can
-          tell what a change broke. Being able to replay a real invoice through one stage and
-          see exactly what moved is what makes it safe to keep improving.&nbsp;
+          The mobile app scans, merges multi-page invoices and queues uploads while offline, and
+          pairs with the web account by QR code, so there is nothing to type on a phone.&nbsp;
+        </D>
+        <D lvl={1}>
+          A big part of it is recovering data that is no longer readable.&nbsp;
+        </D>
+        <D lvl={2}>
+          Real invoices are faded with time, damaged, or photographed badly. The image is
+          cleaned up before it is read, and where a value still cannot be read, the pipeline
+          works it back out from the values around it, because totals, VAT bases and rates have
+          to agree with each other.&nbsp;
         </D>
         <D lvl={1}>
           I built it alone, AI-first.&nbsp;
