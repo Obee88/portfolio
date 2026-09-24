@@ -34,6 +34,14 @@
     background: white;
     z-index: 1;
   }
+  .content {
+    // The scroll handler stops one viewport short of the footer spacer, which
+    // parks the last project hard against the bottom edge - and on a phone
+    // behind the browser chrome, with no way to scroll further. Give the end
+    // of the page room to breathe. The clamp is derived from scrollHeight, so
+    // it grows with this padding and the space is genuinely reachable.
+    padding-bottom: 40px;
+  }
   .footer {
     flex: 0 0 100vh;
   }
@@ -44,7 +52,12 @@
     .content,
     .footer {
       box-sizing: border-box;
-      padding: 0 16px;
+      // Sides only: a shorthand here would reset the bottom padding above.
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+    .content {
+      padding-bottom: 72px;
     }
   }
 }
